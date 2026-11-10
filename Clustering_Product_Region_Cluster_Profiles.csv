@@ -1,0 +1,4 @@
+Cluster,Records,Sales_Total,Units_Total,Gross_Profit_Total,Cost_Total,Profit_Margin_Pct,Lead_Time_Median,Lead_Time_Mean,Lead_Time_Std
+0,492.2,6584.64,1863.75,4441.23,2143.41,67.54,1273.75,1320.4,261.76
+1,27.0,225.41,106.12,50.43,174.98,29.85,1273.38,1283.76,279.99
+2,23.5,1965.0,98.25,982.5,982.5,50.0,1274.0,1331.08,301.83

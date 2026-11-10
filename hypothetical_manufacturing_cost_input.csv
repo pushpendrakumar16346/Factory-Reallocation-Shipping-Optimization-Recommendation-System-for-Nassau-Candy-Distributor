@@ -1,0 +1,5 @@
+Scenario_ID,Scenario_Name,Additional_Manufacturing_Cost_Per_Unit,Assumption_Source
+BASELINE,Historical baseline,0.0,No hypothetical adjustment
+MANUFACTURING_01,User manufacturing scenario 1,,Enter a user-supplied assumption
+MANUFACTURING_02,User manufacturing scenario 2,,Enter a user-supplied assumption
+MANUFACTURING_03,User manufacturing scenario 3,,Enter a user-supplied assumption

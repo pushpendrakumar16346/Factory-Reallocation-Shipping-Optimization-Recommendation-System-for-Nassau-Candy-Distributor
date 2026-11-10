@@ -1,0 +1,33 @@
+FACTORY REFERENCE ANALYSIS — EVIDENCE AND LIMITATIONS
+
+1. Factory names, coordinates, and product-to-factory assignments
+   come from the supplied project reference workbook.
+
+2. The original CSV does not contain a verified historical factory
+   assignment for each order line.
+
+3. Factory-wise sales, gross profit, and units are attributed to factories
+   using the supplied product mapping. They are not verified factory-level
+   production, dispatch, or financial records.
+
+4. The analysis does not establish which factory physically manufactured
+   or shipped a specific historical order.
+
+5. Factory distances are straight-line geographic estimates calculated
+   from supplied coordinates using the Haversine formula.
+
+6. These distances are not road distances, actual transport routes,
+   delivery distances, or travel times.
+
+7. The supplied data does not establish customer coordinates, actual
+   factory dispatch history, factory capacity, inventory, throughput,
+   freight costs, or factory-specific manufacturing costs.
+
+8. The analysis does not prove that assigning products to another factory
+   would reduce lead time, cost, or delivery risk.
+
+9. Any future reassignment or alternative-factory scenario must be
+   labelled hypothetical unless supported by operational evidence.
+
+10. The original CSV is preserved. Factory reference information is
+    added only to separate derived files.

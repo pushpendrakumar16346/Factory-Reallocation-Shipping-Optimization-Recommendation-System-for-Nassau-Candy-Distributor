@@ -1,0 +1,76 @@
+Product Name,Baseline Factory,Candidate Factory,Scenario Type,Factory Compatibility,Scenario Classification,Compatibility Evidence
+Wonka Bar - Nutty Crunch Surprise,Lot's O' Nuts,Lot's O' Nuts,Baseline,Reference mapping,Supplied reference assignment,Reference mapping only
+Wonka Bar - Nutty Crunch Surprise,Lot's O' Nuts,Wicked Choccy's,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar - Nutty Crunch Surprise,Lot's O' Nuts,Sugar Shack,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar - Nutty Crunch Surprise,Lot's O' Nuts,Secret Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar - Nutty Crunch Surprise,Lot's O' Nuts,The Other Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar - Fudge Mallows,Lot's O' Nuts,Lot's O' Nuts,Baseline,Reference mapping,Supplied reference assignment,Reference mapping only
+Wonka Bar - Fudge Mallows,Lot's O' Nuts,Wicked Choccy's,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar - Fudge Mallows,Lot's O' Nuts,Sugar Shack,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar - Fudge Mallows,Lot's O' Nuts,Secret Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar - Fudge Mallows,Lot's O' Nuts,The Other Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar -Scrumdiddlyumptious,Lot's O' Nuts,Lot's O' Nuts,Baseline,Reference mapping,Supplied reference assignment,Reference mapping only
+Wonka Bar -Scrumdiddlyumptious,Lot's O' Nuts,Wicked Choccy's,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar -Scrumdiddlyumptious,Lot's O' Nuts,Sugar Shack,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar -Scrumdiddlyumptious,Lot's O' Nuts,Secret Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar -Scrumdiddlyumptious,Lot's O' Nuts,The Other Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar - Milk Chocolate,Wicked Choccy's,Lot's O' Nuts,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar - Milk Chocolate,Wicked Choccy's,Wicked Choccy's,Baseline,Reference mapping,Supplied reference assignment,Reference mapping only
+Wonka Bar - Milk Chocolate,Wicked Choccy's,Sugar Shack,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar - Milk Chocolate,Wicked Choccy's,Secret Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar - Milk Chocolate,Wicked Choccy's,The Other Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar - Triple Dazzle Caramel,Wicked Choccy's,Lot's O' Nuts,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar - Triple Dazzle Caramel,Wicked Choccy's,Wicked Choccy's,Baseline,Reference mapping,Supplied reference assignment,Reference mapping only
+Wonka Bar - Triple Dazzle Caramel,Wicked Choccy's,Sugar Shack,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar - Triple Dazzle Caramel,Wicked Choccy's,Secret Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Bar - Triple Dazzle Caramel,Wicked Choccy's,The Other Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Laffy Taffy,Sugar Shack,Lot's O' Nuts,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Laffy Taffy,Sugar Shack,Wicked Choccy's,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Laffy Taffy,Sugar Shack,Sugar Shack,Baseline,Reference mapping,Supplied reference assignment,Reference mapping only
+Laffy Taffy,Sugar Shack,Secret Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Laffy Taffy,Sugar Shack,The Other Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+SweeTARTS,Sugar Shack,Lot's O' Nuts,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+SweeTARTS,Sugar Shack,Wicked Choccy's,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+SweeTARTS,Sugar Shack,Sugar Shack,Baseline,Reference mapping,Supplied reference assignment,Reference mapping only
+SweeTARTS,Sugar Shack,Secret Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+SweeTARTS,Sugar Shack,The Other Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Nerds,Sugar Shack,Lot's O' Nuts,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Nerds,Sugar Shack,Wicked Choccy's,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Nerds,Sugar Shack,Sugar Shack,Baseline,Reference mapping,Supplied reference assignment,Reference mapping only
+Nerds,Sugar Shack,Secret Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Nerds,Sugar Shack,The Other Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Fun Dip,Sugar Shack,Lot's O' Nuts,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Fun Dip,Sugar Shack,Wicked Choccy's,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Fun Dip,Sugar Shack,Sugar Shack,Baseline,Reference mapping,Supplied reference assignment,Reference mapping only
+Fun Dip,Sugar Shack,Secret Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Fun Dip,Sugar Shack,The Other Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Everlasting Gobstopper,Secret Factory,Lot's O' Nuts,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Everlasting Gobstopper,Secret Factory,Wicked Choccy's,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Everlasting Gobstopper,Secret Factory,Sugar Shack,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Everlasting Gobstopper,Secret Factory,Secret Factory,Baseline,Reference mapping,Supplied reference assignment,Reference mapping only
+Everlasting Gobstopper,Secret Factory,The Other Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Hair Toffee,The Other Factory,Lot's O' Nuts,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Hair Toffee,The Other Factory,Wicked Choccy's,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Hair Toffee,The Other Factory,Sugar Shack,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Hair Toffee,The Other Factory,Secret Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Hair Toffee,The Other Factory,The Other Factory,Baseline,Reference mapping,Supplied reference assignment,Reference mapping only
+Fizzy Lifting Drinks,Sugar Shack,Lot's O' Nuts,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Fizzy Lifting Drinks,Sugar Shack,Wicked Choccy's,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Fizzy Lifting Drinks,Sugar Shack,Sugar Shack,Baseline,Reference mapping,Supplied reference assignment,Reference mapping only
+Fizzy Lifting Drinks,Sugar Shack,Secret Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Fizzy Lifting Drinks,Sugar Shack,The Other Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Lickable Wallpaper,Secret Factory,Lot's O' Nuts,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Lickable Wallpaper,Secret Factory,Wicked Choccy's,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Lickable Wallpaper,Secret Factory,Sugar Shack,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Lickable Wallpaper,Secret Factory,Secret Factory,Baseline,Reference mapping,Supplied reference assignment,Reference mapping only
+Lickable Wallpaper,Secret Factory,The Other Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Gum,Secret Factory,Lot's O' Nuts,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Gum,Secret Factory,Wicked Choccy's,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Gum,Secret Factory,Sugar Shack,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Wonka Gum,Secret Factory,Secret Factory,Baseline,Reference mapping,Supplied reference assignment,Reference mapping only
+Wonka Gum,Secret Factory,The Other Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Kazookles,The Other Factory,Lot's O' Nuts,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Kazookles,The Other Factory,Wicked Choccy's,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Kazookles,The Other Factory,Sugar Shack,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Kazookles,The Other Factory,Secret Factory,Hypothetical Alternative,Compatibility unverified,Hypothetical reassignment,Not supplied - unknown
+Kazookles,The Other Factory,The Other Factory,Baseline,Reference mapping,Supplied reference assignment,Reference mapping only

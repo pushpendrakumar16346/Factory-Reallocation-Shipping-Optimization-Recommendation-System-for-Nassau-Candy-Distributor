@@ -1,0 +1,2 @@
+Scenario_ID,Scenario_Name,Additional_Freight_Cost_Per_Unit,Assumption_Source,Additional_Manufacturing_Cost_Per_Unit,Total_Additional_Cost_Per_Unit,Scenario_Type
+BASELINE,Historical baseline,0.0,No hypothetical adjustment,0.0,0.0,Historical baseline

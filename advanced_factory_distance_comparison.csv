@@ -1,0 +1,76 @@
+Product Name,Baseline Factory,Candidate Factory,Scenario Type,Straight_Line_Distance_KM,Distance Type
+Everlasting Gobstopper,Secret Factory,Lot's O' Nuts,Hypothetical Alternative,2098.591690344979,Haversine straight-line distance - not road distance
+Everlasting Gobstopper,Secret Factory,Wicked Choccy's,Hypothetical Alternative,1339.2152868688192,Haversine straight-line distance - not road distance
+Everlasting Gobstopper,Secret Factory,Sugar Shack,Hypothetical Alternative,863.7244137006561,Haversine straight-line distance - not road distance
+Everlasting Gobstopper,Secret Factory,Secret Factory,Baseline,0.0,Haversine straight-line distance - not road distance
+Everlasting Gobstopper,Secret Factory,The Other Factory,Hypothetical Alternative,705.6392836879821,Haversine straight-line distance - not road distance
+Fizzy Lifting Drinks,Sugar Shack,Lot's O' Nuts,Hypothetical Alternative,2137.8156235903834,Haversine straight-line distance - not road distance
+Fizzy Lifting Drinks,Sugar Shack,Wicked Choccy's,Hypothetical Alternative,2189.189866082905,Haversine straight-line distance - not road distance
+Fizzy Lifting Drinks,Sugar Shack,Sugar Shack,Baseline,0.0,Haversine straight-line distance - not road distance
+Fizzy Lifting Drinks,Sugar Shack,Secret Factory,Hypothetical Alternative,863.7244137006561,Haversine straight-line distance - not road distance
+Fizzy Lifting Drinks,Sugar Shack,The Other Factory,Hypothetical Alternative,1533.823207271777,Haversine straight-line distance - not road distance
+Fun Dip,Sugar Shack,Lot's O' Nuts,Hypothetical Alternative,2137.8156235903834,Haversine straight-line distance - not road distance
+Fun Dip,Sugar Shack,Wicked Choccy's,Hypothetical Alternative,2189.189866082905,Haversine straight-line distance - not road distance
+Fun Dip,Sugar Shack,Sugar Shack,Baseline,0.0,Haversine straight-line distance - not road distance
+Fun Dip,Sugar Shack,Secret Factory,Hypothetical Alternative,863.7244137006561,Haversine straight-line distance - not road distance
+Fun Dip,Sugar Shack,The Other Factory,Hypothetical Alternative,1533.823207271777,Haversine straight-line distance - not road distance
+Hair Toffee,The Other Factory,Lot's O' Nuts,Hypothetical Alternative,2020.5776865694495,Haversine straight-line distance - not road distance
+Hair Toffee,The Other Factory,Wicked Choccy's,Hypothetical Alternative,889.0721521118867,Haversine straight-line distance - not road distance
+Hair Toffee,The Other Factory,Sugar Shack,Hypothetical Alternative,1533.823207271777,Haversine straight-line distance - not road distance
+Hair Toffee,The Other Factory,Secret Factory,Hypothetical Alternative,705.6392836879821,Haversine straight-line distance - not road distance
+Hair Toffee,The Other Factory,The Other Factory,Baseline,0.0,Haversine straight-line distance - not road distance
+Kazookles,The Other Factory,Lot's O' Nuts,Hypothetical Alternative,2020.5776865694495,Haversine straight-line distance - not road distance
+Kazookles,The Other Factory,Wicked Choccy's,Hypothetical Alternative,889.0721521118867,Haversine straight-line distance - not road distance
+Kazookles,The Other Factory,Sugar Shack,Hypothetical Alternative,1533.823207271777,Haversine straight-line distance - not road distance
+Kazookles,The Other Factory,Secret Factory,Hypothetical Alternative,705.6392836879821,Haversine straight-line distance - not road distance
+Kazookles,The Other Factory,The Other Factory,Baseline,0.0,Haversine straight-line distance - not road distance
+Laffy Taffy,Sugar Shack,Lot's O' Nuts,Hypothetical Alternative,2137.8156235903834,Haversine straight-line distance - not road distance
+Laffy Taffy,Sugar Shack,Wicked Choccy's,Hypothetical Alternative,2189.189866082905,Haversine straight-line distance - not road distance
+Laffy Taffy,Sugar Shack,Sugar Shack,Baseline,0.0,Haversine straight-line distance - not road distance
+Laffy Taffy,Sugar Shack,Secret Factory,Hypothetical Alternative,863.7244137006561,Haversine straight-line distance - not road distance
+Laffy Taffy,Sugar Shack,The Other Factory,Hypothetical Alternative,1533.823207271777,Haversine straight-line distance - not road distance
+Lickable Wallpaper,Secret Factory,Lot's O' Nuts,Hypothetical Alternative,2098.591690344979,Haversine straight-line distance - not road distance
+Lickable Wallpaper,Secret Factory,Wicked Choccy's,Hypothetical Alternative,1339.2152868688192,Haversine straight-line distance - not road distance
+Lickable Wallpaper,Secret Factory,Sugar Shack,Hypothetical Alternative,863.7244137006561,Haversine straight-line distance - not road distance
+Lickable Wallpaper,Secret Factory,Secret Factory,Baseline,0.0,Haversine straight-line distance - not road distance
+Lickable Wallpaper,Secret Factory,The Other Factory,Hypothetical Alternative,705.6392836879821,Haversine straight-line distance - not road distance
+Nerds,Sugar Shack,Lot's O' Nuts,Hypothetical Alternative,2137.8156235903834,Haversine straight-line distance - not road distance
+Nerds,Sugar Shack,Wicked Choccy's,Hypothetical Alternative,2189.189866082905,Haversine straight-line distance - not road distance
+Nerds,Sugar Shack,Sugar Shack,Baseline,0.0,Haversine straight-line distance - not road distance
+Nerds,Sugar Shack,Secret Factory,Hypothetical Alternative,863.7244137006561,Haversine straight-line distance - not road distance
+Nerds,Sugar Shack,The Other Factory,Hypothetical Alternative,1533.823207271777,Haversine straight-line distance - not road distance
+SweeTARTS,Sugar Shack,Lot's O' Nuts,Hypothetical Alternative,2137.8156235903834,Haversine straight-line distance - not road distance
+SweeTARTS,Sugar Shack,Wicked Choccy's,Hypothetical Alternative,2189.189866082905,Haversine straight-line distance - not road distance
+SweeTARTS,Sugar Shack,Sugar Shack,Baseline,0.0,Haversine straight-line distance - not road distance
+SweeTARTS,Sugar Shack,Secret Factory,Hypothetical Alternative,863.7244137006561,Haversine straight-line distance - not road distance
+SweeTARTS,Sugar Shack,The Other Factory,Hypothetical Alternative,1533.823207271777,Haversine straight-line distance - not road distance
+Wonka Bar - Fudge Mallows,Lot's O' Nuts,Lot's O' Nuts,Baseline,0.0,Haversine straight-line distance - not road distance
+Wonka Bar - Fudge Mallows,Lot's O' Nuts,Wicked Choccy's,Hypothetical Alternative,2869.0767158756503,Haversine straight-line distance - not road distance
+Wonka Bar - Fudge Mallows,Lot's O' Nuts,Sugar Shack,Hypothetical Alternative,2137.8156235903834,Haversine straight-line distance - not road distance
+Wonka Bar - Fudge Mallows,Lot's O' Nuts,Secret Factory,Hypothetical Alternative,2098.591690344979,Haversine straight-line distance - not road distance
+Wonka Bar - Fudge Mallows,Lot's O' Nuts,The Other Factory,Hypothetical Alternative,2020.5776865694495,Haversine straight-line distance - not road distance
+Wonka Bar - Milk Chocolate,Wicked Choccy's,Lot's O' Nuts,Hypothetical Alternative,2869.0767158756503,Haversine straight-line distance - not road distance
+Wonka Bar - Milk Chocolate,Wicked Choccy's,Wicked Choccy's,Baseline,0.0,Haversine straight-line distance - not road distance
+Wonka Bar - Milk Chocolate,Wicked Choccy's,Sugar Shack,Hypothetical Alternative,2189.189866082905,Haversine straight-line distance - not road distance
+Wonka Bar - Milk Chocolate,Wicked Choccy's,Secret Factory,Hypothetical Alternative,1339.2152868688192,Haversine straight-line distance - not road distance
+Wonka Bar - Milk Chocolate,Wicked Choccy's,The Other Factory,Hypothetical Alternative,889.0721521118867,Haversine straight-line distance - not road distance
+Wonka Bar - Nutty Crunch Surprise,Lot's O' Nuts,Lot's O' Nuts,Baseline,0.0,Haversine straight-line distance - not road distance
+Wonka Bar - Nutty Crunch Surprise,Lot's O' Nuts,Wicked Choccy's,Hypothetical Alternative,2869.0767158756503,Haversine straight-line distance - not road distance
+Wonka Bar - Nutty Crunch Surprise,Lot's O' Nuts,Sugar Shack,Hypothetical Alternative,2137.8156235903834,Haversine straight-line distance - not road distance
+Wonka Bar - Nutty Crunch Surprise,Lot's O' Nuts,Secret Factory,Hypothetical Alternative,2098.591690344979,Haversine straight-line distance - not road distance
+Wonka Bar - Nutty Crunch Surprise,Lot's O' Nuts,The Other Factory,Hypothetical Alternative,2020.5776865694495,Haversine straight-line distance - not road distance
+Wonka Bar - Triple Dazzle Caramel,Wicked Choccy's,Lot's O' Nuts,Hypothetical Alternative,2869.0767158756503,Haversine straight-line distance - not road distance
+Wonka Bar - Triple Dazzle Caramel,Wicked Choccy's,Wicked Choccy's,Baseline,0.0,Haversine straight-line distance - not road distance
+Wonka Bar - Triple Dazzle Caramel,Wicked Choccy's,Sugar Shack,Hypothetical Alternative,2189.189866082905,Haversine straight-line distance - not road distance
+Wonka Bar - Triple Dazzle Caramel,Wicked Choccy's,Secret Factory,Hypothetical Alternative,1339.2152868688192,Haversine straight-line distance - not road distance
+Wonka Bar - Triple Dazzle Caramel,Wicked Choccy's,The Other Factory,Hypothetical Alternative,889.0721521118867,Haversine straight-line distance - not road distance
+Wonka Bar -Scrumdiddlyumptious,Lot's O' Nuts,Lot's O' Nuts,Baseline,0.0,Haversine straight-line distance - not road distance
+Wonka Bar -Scrumdiddlyumptious,Lot's O' Nuts,Wicked Choccy's,Hypothetical Alternative,2869.0767158756503,Haversine straight-line distance - not road distance
+Wonka Bar -Scrumdiddlyumptious,Lot's O' Nuts,Sugar Shack,Hypothetical Alternative,2137.8156235903834,Haversine straight-line distance - not road distance
+Wonka Bar -Scrumdiddlyumptious,Lot's O' Nuts,Secret Factory,Hypothetical Alternative,2098.591690344979,Haversine straight-line distance - not road distance
+Wonka Bar -Scrumdiddlyumptious,Lot's O' Nuts,The Other Factory,Hypothetical Alternative,2020.5776865694495,Haversine straight-line distance - not road distance
+Wonka Gum,Secret Factory,Lot's O' Nuts,Hypothetical Alternative,2098.591690344979,Haversine straight-line distance - not road distance
+Wonka Gum,Secret Factory,Wicked Choccy's,Hypothetical Alternative,1339.2152868688192,Haversine straight-line distance - not road distance
+Wonka Gum,Secret Factory,Sugar Shack,Hypothetical Alternative,863.7244137006561,Haversine straight-line distance - not road distance
+Wonka Gum,Secret Factory,Secret Factory,Baseline,0.0,Haversine straight-line distance - not road distance
+Wonka Gum,Secret Factory,The Other Factory,Hypothetical Alternative,705.6392836879821,Haversine straight-line distance - not road distance

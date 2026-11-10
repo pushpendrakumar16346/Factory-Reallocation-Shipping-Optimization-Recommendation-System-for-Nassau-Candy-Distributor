@@ -1,0 +1,19 @@
+Column Name,Data Type,Business Description
+Row ID,int64,Unique identifier for an individual dataset row.
+Order ID,object,Identifier of a customer order.
+Order Date,object,Date on which the order was recorded.
+Ship Date,object,Recorded shipping date associated with the order.
+Ship Mode,object,Shipping method or service category.
+Customer ID,int64,Identifier assigned to a customer.
+Country/Region,object,Country or broader geographical classification.
+City,object,City associated with the customer or transaction.
+State/Province,object,State or province associated with the transaction.
+Postal Code,object,Postal or ZIP code associated with the location.
+Division,object,Business division or product classification.
+Region,object,Geographical sales region.
+Product ID,object,Identifier assigned to a product.
+Product Name,object,Name of the product.
+Sales,float64,Recorded sales amount.
+Units,int64,Number of product units recorded.
+Gross Profit,float64,Recorded gross profit amount.
+Cost,float64,Recorded cost amount; exact cost components require confirmation.

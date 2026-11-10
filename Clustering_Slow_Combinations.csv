@@ -1,0 +1,155 @@
+Product Name,Region,Ship Mode,Records,Unique_Orders,Lead_Time_Median,Lead_Time_Mean,Lead_Time_Std,Sales_Total,Gross_Profit_Total,Eligible_For_Ranking
+Wonka Bar - Nutty Crunch Surprise,Gulf,Same Day,15,12,1635.0,1439.8666666666666,234.0545927362939,237.32,169.32,True
+Wonka Bar - Triple Dazzle Caramel,Pacific,Same Day,45,36,1634.0,1407.4888888888888,261.9627508411888,693.75,453.25,True
+Lickable Wallpaper,Atlantic,Standard Class,19,18,1275.0,1351.1052631578948,287.8654961256196,1520.0,760.0,True
+Lickable Wallpaper,Pacific,Standard Class,19,19,1275.0,1293.842105263158,285.105489864501,1660.0,830.0,True
+Wonka Bar - Nutty Crunch Surprise,Atlantic,Standard Class,287,243,1275.0,1371.0522648083625,244.4930406150418,3657.52,2609.52,True
+Wonka Bar - Triple Dazzle Caramel,Gulf,Standard Class,213,166,1275.0,1339.413145539906,242.3571320366317,2943.75,1923.25,True
+Wonka Bar -Scrumdiddlyumptious,Pacific,Standard Class,372,314,1275.0,1336.1639784946237,265.8646626776086,5025.6,3490.0,True
+Wonka Gum,Atlantic,Standard Class,25,24,1275.0,1317.88,285.4896845772189,143.75,74.75,True
+Wonka Gum,Gulf,Standard Class,12,12,1274.5,1304.75,328.99519891495515,71.25,37.05,True
+Kazookles,Atlantic,Standard Class,22,21,1274.0,1307.5,274.411881944607,276.25,21.25,True
+Wonka Bar - Fudge Mallows,Atlantic,Standard Class,324,270,1274.0,1306.898148148148,263.9729418942163,4291.2,2860.8,True
+Wonka Bar - Fudge Mallows,Gulf,Standard Class,172,143,1274.0,1293.4186046511627,277.5118337971497,2311.2000000000003,1540.8,True
+Wonka Bar - Fudge Mallows,Interior,Standard Class,258,221,1274.0,1299.6782945736434,262.6062304852782,3675.6,2450.4,True
+Wonka Bar - Fudge Mallows,Pacific,Standard Class,344,286,1274.0,1305.218023255814,266.61642252262527,4921.2,3280.8,True
+Wonka Bar - Milk Chocolate,Atlantic,Standard Class,413,329,1274.0,1306.084745762712,262.7218804935066,5037.5,3270.5,True
+Wonka Bar - Milk Chocolate,Gulf,Standard Class,191,157,1274.0,1289.7068062827225,264.6741152232691,2541.5,1650.02,True
+Wonka Bar - Milk Chocolate,Interior,Standard Class,306,258,1274.0,1326.862745098039,266.12945349464337,3740.75,2428.61,True
+Wonka Bar - Milk Chocolate,Pacific,Second Class,133,108,1274.0,1344.045112781955,271.68282712655883,1784.25,1158.3899999999999,True
+Wonka Bar - Milk Chocolate,Pacific,Standard Class,403,341,1274.0,1315.1464019851117,272.9160221204627,5437.25,3530.0299999999997,True
+Wonka Bar - Nutty Crunch Surprise,Gulf,Standard Class,176,153,1274.0,1309.5738636363637,255.2823315443145,2265.01,1616.01,True
+Wonka Bar - Nutty Crunch Surprise,Interior,Standard Class,266,227,1274.0,1320.9436090225563,267.30223268897464,3500.4700000000003,2497.47,True
+Wonka Bar - Nutty Crunch Surprise,Pacific,Standard Class,337,284,1274.0,1298.160237388724,269.3077288511995,4620.76,3296.76,True
+Wonka Bar - Triple Dazzle Caramel,Atlantic,Standard Class,321,270,1274.0,1324.2772585669782,255.17859140700062,4395.0,2871.4,True
+Wonka Bar - Triple Dazzle Caramel,Interior,Standard Class,290,244,1274.0,1295.7379310344827,263.3358275507325,4038.75,2638.65,True
+Wonka Bar - Triple Dazzle Caramel,Pacific,Standard Class,412,345,1274.0,1315.9733009708739,257.2952080839162,5925.0,3871.0,True
+Wonka Bar -Scrumdiddlyumptious,Atlantic,Standard Class,357,297,1274.0,1297.7310924369747,255.20895924488926,4964.4,3447.5,True
+Wonka Bar -Scrumdiddlyumptious,Gulf,Standard Class,191,159,1274.0,1299.151832460733,259.9542327821597,2718.0,1887.5,True
+Wonka Bar -Scrumdiddlyumptious,Interior,Standard Class,293,246,1274.0,1332.8395904436861,252.64325558307027,3945.6,2740.0,True
+Wonka Gum,Interior,Standard Class,14,14,1274.0,1274.0714285714287,287.0168754850259,60.0,31.2,True
+Wonka Gum,Pacific,Standard Class,11,11,1274.0,1241.0,303.53484149270247,31.25,16.25,True
+Wonka Bar - Milk Chocolate,Interior,Second Class,96,79,1273.5,1326.2083333333333,259.6401930067092,1231.75,799.6899999999999,True
+Kazookles,Pacific,Standard Class,15,14,1273.0,1201.2,247.06193555462974,172.25,13.25,True
+Wonka Bar - Fudge Mallows,Atlantic,Second Class,93,82,1273.0,1339.3010752688172,263.6857807639466,1292.4,861.6,True
+Wonka Bar - Fudge Mallows,Gulf,Second Class,58,50,1273.0,1367.0862068965516,270.2159165571091,756.0,504.0,True
+Wonka Bar - Fudge Mallows,Interior,Second Class,74,61,1273.0,1302.0405405405406,261.9102868043759,1051.2,700.8,True
+Wonka Bar - Milk Chocolate,Atlantic,Second Class,105,86,1273.0,1335.2095238095237,223.5959480521685,1209.0,784.92,True
+Wonka Bar - Milk Chocolate,Gulf,Second Class,69,59,1273.0,1299.0,275.51155628586406,1040.0,675.2,True
+Wonka Bar - Nutty Crunch Surprise,Atlantic,Second Class,91,79,1273.0,1328.9120879120878,249.28549667451304,1238.95,883.95,True
+Wonka Bar - Nutty Crunch Surprise,Gulf,Second Class,65,52,1273.0,1328.676923076923,283.2944089024432,830.62,592.62,True
+Wonka Bar - Nutty Crunch Surprise,Interior,Second Class,106,87,1273.0,1317.377358490566,245.45454250198955,1423.92,1015.92,True
+Wonka Bar - Triple Dazzle Caramel,Atlantic,Second Class,122,96,1273.0,1323.3524590163934,279.46125626682823,1815.0,1185.8,True
+Wonka Bar - Triple Dazzle Caramel,Interior,Second Class,81,66,1273.0,1331.20987654321,248.02916744051413,1218.75,796.25,True
+Wonka Bar - Triple Dazzle Caramel,Pacific,Second Class,123,107,1273.0,1346.6747967479675,260.3989214532497,1725.0,1127.0,True
+Wonka Bar -Scrumdiddlyumptious,Atlantic,Second Class,120,96,1273.0,1327.2333333333333,253.76846236874505,1566.0,1087.5,True
+Wonka Bar -Scrumdiddlyumptious,Interior,Second Class,95,72,1273.0,1287.8315789473684,255.06877056112862,1206.0,837.5,True
+Wonka Bar -Scrumdiddlyumptious,Pacific,Second Class,144,121,1273.0,1287.861111111111,262.25367026599963,1756.8,1220.0,True
+Wonka Bar - Triple Dazzle Caramel,Interior,First Class,52,44,1272.5,1363.0384615384614,297.1602170044566,753.75,492.45,True
+Wonka Bar -Scrumdiddlyumptious,Gulf,Second Class,60,48,1272.5,1321.2166666666667,264.7980421138809,828.0,575.0,True
+Wonka Bar - Fudge Mallows,Atlantic,First Class,109,85,1272.0,1338.5045871559632,249.40661519090736,1375.2,916.8,True
+Wonka Bar - Fudge Mallows,Interior,First Class,54,46,1272.0,1346.111111111111,259.58433149408836,730.8000000000001,487.2,True
+Wonka Bar - Fudge Mallows,Pacific,Second Class,121,103,1272.0,1329.8181818181818,275.2680511792095,1728.0,1152.0,True
+Wonka Bar - Milk Chocolate,Gulf,First Class,58,51,1272.0,1309.2931034482758,253.24345187292693,611.0,396.68,True
+Wonka Bar - Milk Chocolate,Interior,First Class,72,67,1272.0,1357.7916666666667,284.2897221616718,848.25,550.71,True
+Wonka Bar - Milk Chocolate,Pacific,First Class,99,78,1272.0,1352.7373737373737,269.0262329162606,1218.75,791.25,True
+Wonka Bar - Nutty Crunch Surprise,Atlantic,First Class,79,65,1272.0,1354.5443037974683,233.68221888339193,1204.05,859.05,True
+Wonka Bar - Nutty Crunch Surprise,Gulf,First Class,40,34,1272.0,1326.175,268.595386055413,464.17,331.17,True
+Wonka Bar - Nutty Crunch Surprise,Interior,First Class,55,54,1272.0,1351.3272727272727,269.6330877696615,722.4300000000001,515.4300000000001,True
+Wonka Bar - Nutty Crunch Surprise,Pacific,First Class,112,93,1272.0,1304.0089285714287,284.06767039035594,1305.26,931.26,True
+Wonka Bar - Nutty Crunch Surprise,Pacific,Second Class,93,81,1272.0,1311.5483870967741,260.75411189925694,1106.33,789.33,True
+Wonka Bar - Triple Dazzle Caramel,Atlantic,First Class,88,75,1272.0,1354.6363636363637,258.56759190205383,1211.25,791.35,True
+Wonka Bar - Triple Dazzle Caramel,Gulf,First Class,41,36,1272.0,1324.8048780487804,277.66240468527553,570.0,372.40000000000003,True
+Wonka Bar - Triple Dazzle Caramel,Gulf,Second Class,61,52,1272.0,1302.3934426229507,285.64869325149067,907.5,592.9,True
+Wonka Bar - Triple Dazzle Caramel,Pacific,First Class,96,83,1272.0,1347.53125,270.0274041892004,1387.5,906.5,True
+Wonka Bar -Scrumdiddlyumptious,Atlantic,First Class,112,93,1272.0,1327.044642857143,269.6948689044431,1494.0,1037.5,True
+Wonka Bar -Scrumdiddlyumptious,Gulf,First Class,47,35,1272.0,1372.3829787234042,282.0194684300059,637.2,442.5,True
+Wonka Bar -Scrumdiddlyumptious,Interior,First Class,56,48,1272.0,1363.0535714285713,272.04674863258055,846.0,587.5,True
+Wonka Bar -Scrumdiddlyumptious,Pacific,First Class,113,92,1272.0,1361.8053097345132,260.86657982876034,1598.4,1110.0,True
+Wonka Bar - Fudge Mallows,Gulf,First Class,39,36,1271.0,1299.5384615384614,282.89898198490783,504.0,336.0,True
+Wonka Bar - Fudge Mallows,Pacific,First Class,74,64,1271.0,1345.472972972973,256.7566527114502,968.4,645.6,True
+Wonka Bar - Milk Chocolate,Atlantic,First Class,84,65,1271.0,1297.4880952380952,225.4564042514981,848.25,550.71,True
+Wonka Bar - Nutty Crunch Surprise,Interior,Same Day,25,17,1270.0,1430.2,213.21585306913764,265.24,189.24,True
+Wonka Bar - Fudge Mallows,Atlantic,Same Day,22,18,1269.0,1368.8636363636363,201.36635540951013,270.0,180.0,True
+Wonka Bar - Fudge Mallows,Gulf,Same Day,22,14,1269.0,1236.0,249.87768436348443,324.0,216.0,True
+Wonka Bar - Fudge Mallows,Interior,Same Day,24,20,1269.0,1391.0833333333333,232.9681666379909,284.4,189.6,True
+Wonka Bar - Fudge Mallows,Pacific,Same Day,30,28,1269.0,1281.5,244.41058586476703,406.8,271.2,True
+Wonka Bar - Milk Chocolate,Atlantic,Same Day,37,30,1269.0,1298.837837837838,234.04730214133983,497.25,322.83,True
+Wonka Bar - Milk Chocolate,Gulf,Same Day,15,14,1269.0,1171.8,257.1192608221218,214.5,139.26,True
+Wonka Bar - Milk Chocolate,Interior,Same Day,25,21,1269.0,1342.4,279.2098971502741,253.5,164.57999999999998,True
+Wonka Bar - Milk Chocolate,Pacific,Same Day,31,25,1269.0,1304.8064516129032,272.9218959525282,354.25,229.99,True
+Wonka Bar - Nutty Crunch Surprise,Atlantic,Same Day,33,23,1269.0,1369.0,278.31468250884643,380.41,271.41,True
+Wonka Bar - Nutty Crunch Surprise,Pacific,Same Day,30,25,1269.0,1354.6666666666667,266.09828795122826,352.49,251.49,True
+Wonka Bar - Triple Dazzle Caramel,Atlantic,Same Day,27,22,1269.0,1215.0740740740741,242.03526855619873,401.25,262.15,True
+Wonka Bar - Triple Dazzle Caramel,Gulf,Same Day,15,12,1269.0,1293.5333333333333,217.00719759842957,165.0,107.8,True
+Wonka Bar - Triple Dazzle Caramel,Interior,Same Day,28,23,1269.0,1399.892857142857,248.0579889320557,333.75,218.05,True
+Wonka Bar -Scrumdiddlyumptious,Atlantic,Same Day,34,27,1269.0,1237.0294117647059,275.37142798619954,432.0,300.0,True
+Wonka Bar -Scrumdiddlyumptious,Gulf,Same Day,12,9,1269.0,1299.6666666666667,188.4348613439057,147.6,102.5,True
+Wonka Bar -Scrumdiddlyumptious,Interior,Same Day,15,14,1269.0,1415.4,185.5958743383823,205.20000000000002,142.5,True
+Wonka Bar -Scrumdiddlyumptious,Pacific,Same Day,43,33,1269.0,1354.2558139534883,250.24274814888707,504.0,350.0,True
+Everlasting Gobstopper,Interior,Standard Class,1,1,1641.0,1641.0,0.0,30.0,24.0,False
+Fizzy Lifting Drinks,Interior,Standard Class,1,1,1640.0,1640.0,0.0,11.25,6.75,False
+SweeTARTS,Atlantic,Second Class,1,1,1640.0,1640.0,0.0,7.5,3.5,False
+Hair Toffee,Atlantic,Standard Class,1,1,1639.0,1639.0,0.0,22.5,17.5,False
+Laffy Taffy,Pacific,Standard Class,1,1,1638.0,1638.0,0.0,1.99,1.24,False
+Lickable Wallpaper,Gulf,Second Class,3,3,1638.0,1394.3333333333333,422.90936775310774,180.0,90.0,False
+SweeTARTS,Pacific,Second Class,1,1,1638.0,1638.0,0.0,6.0,2.8,False
+Fizzy Lifting Drinks,Atlantic,First Class,1,1,1637.0,1637.0,0.0,15.0,9.0,False
+Lickable Wallpaper,Atlantic,First Class,9,9,1637.0,1515.111111111111,258.8606982744022,700.0,350.0,False
+Lickable Wallpaper,Interior,First Class,1,1,1637.0,1637.0,0.0,180.0,90.0,False
+Lickable Wallpaper,Pacific,Second Class,6,6,1637.0,1515.5,189.39033766272243,600.0,300.0,False
+Wonka Gum,Atlantic,Second Class,3,3,1637.0,1516.0,210.44476710053877,11.25,5.85,False
+Wonka Gum,Gulf,Second Class,9,8,1637.0,1435.6666666666667,265.72542219366215,45.0,23.400000000000002,False
+Hair Toffee,Gulf,Same Day,1,1,1635.0,1635.0,0.0,9.0,7.0,False
+Laffy Taffy,Atlantic,Same Day,1,1,1635.0,1635.0,0.0,7.96,4.96,False
+Lickable Wallpaper,Interior,Same Day,1,1,1635.0,1635.0,0.0,80.0,40.0,False
+Wonka Gum,Gulf,Same Day,1,1,1635.0,1635.0,0.0,5.0,2.6,False
+Laffy Taffy,Atlantic,Standard Class,4,4,1458.0,1457.75,212.17818769452563,17.91,11.16,False
+Kazookles,Pacific,Second Class,8,8,1454.5,1409.0,272.4581226013064,97.5,7.5,False
+Wonka Gum,Pacific,First Class,6,6,1454.0,1393.3333333333333,298.6748510783368,16.25,8.45,False
+Kazookles,Pacific,Same Day,2,2,1452.0,1452.0,258.8010819142764,22.75,1.75,False
+Wonka Gum,Interior,Same Day,2,2,1452.0,1452.0,258.8010819142764,11.25,5.85,False
+Fun Dip,Atlantic,Standard Class,1,1,1275.0,1275.0,0.0,6.0,2.4,False
+Hair Toffee,Pacific,Standard Class,1,1,1275.0,1275.0,0.0,22.5,17.5,False
+Kazookles,Gulf,Standard Class,9,9,1275.0,1355.3333333333333,243.62727679798093,156.0,12.0,False
+Fizzy Lifting Drinks,Atlantic,Standard Class,1,1,1274.0,1274.0,0.0,18.75,11.25,False
+Fizzy Lifting Drinks,Pacific,Standard Class,1,1,1274.0,1274.0,0.0,11.25,6.75,False
+Nerds,Atlantic,Standard Class,4,4,1274.0,1274.0,422.0434416818566,15.0,7.0,False
+SweeTARTS,Atlantic,Standard Class,4,4,1274.0,1274.5,298.0229297665981,28.5,13.3,False
+Wonka Gum,Pacific,Second Class,8,8,1274.0,1363.625,257.9445884570671,31.25,16.25,False
+Lickable Wallpaper,Gulf,Standard Class,6,5,1273.5,1334.3333333333333,275.160801471915,480.0,240.0,False
+Everlasting Gobstopper,Gulf,Standard Class,1,1,1273.0,1273.0,0.0,40.0,32.0,False
+Kazookles,Interior,Standard Class,7,7,1273.0,1169.2857142857142,178.1522890541632,84.5,6.5,False
+Lickable Wallpaper,Atlantic,Second Class,5,5,1273.0,1345.8,305.7428658202837,420.0,210.0,False
+SweeTARTS,Interior,Standard Class,3,3,1273.0,1395.6666666666667,212.46489906178226,16.5,7.699999999999999,False
+Fun Dip,Gulf,Second Class,1,1,1272.0,1272.0,0.0,1.5,0.6,False
+Hair Toffee,Pacific,First Class,1,1,1272.0,1272.0,0.0,22.5,17.5,False
+Kazookles,Interior,First Class,2,2,1272.0,1272.0,517.6021638285528,22.75,1.75,False
+Kazookles,Interior,Second Class,2,2,1272.0,1272.0,517.6021638285528,19.5,1.5,False
+Kazookles,Pacific,First Class,5,5,1272.0,1418.0,200.8332641770282,48.75,3.75,False
+Laffy Taffy,Interior,First Class,1,1,1272.0,1272.0,0.0,1.99,1.24,False
+Lickable Wallpaper,Interior,Second Class,5,5,1272.0,1344.8,306.03872304007547,560.0,280.0,False
+SweeTARTS,Interior,Second Class,1,1,1272.0,1272.0,0.0,3.0,1.4,False
+Wonka Gum,Interior,First Class,9,9,1272.0,1271.6666666666667,365.62617521178646,47.5,24.7,False
+Fun Dip,Interior,Second Class,1,1,1271.0,1271.0,0.0,4.5,1.8,False
+Kazookles,Atlantic,First Class,5,5,1271.0,1271.6,258.09455631609126,78.0,6.0,False
+Kazookles,Atlantic,Second Class,8,8,1271.0,1180.5,259.2064814004464,110.5,8.5,False
+Kazookles,Gulf,Second Class,3,3,1271.0,1150.3333333333333,210.73522091319558,26.0,2.0,False
+Laffy Taffy,Atlantic,First Class,1,1,1271.0,1271.0,0.0,1.99,1.24,False
+Lickable Wallpaper,Pacific,First Class,8,8,1271.0,1226.0,234.05860072090616,620.0,310.0,False
+Wonka Gum,Atlantic,First Class,8,8,1271.0,1226.0,305.22216732827815,47.5,24.7,False
+Everlasting Gobstopper,Pacific,First Class,1,1,1270.0,1270.0,0.0,60.0,48.0,False
+Wonka Gum,Pacific,Same Day,3,3,1270.0,1269.6666666666667,365.5001139990702,17.5,9.1,False
+Kazookles,Atlantic,Same Day,2,2,1269.0,1269.0,0.0,19.5,1.5,False
+Lickable Wallpaper,Atlantic,Same Day,2,2,1269.0,1269.0,0.0,140.0,70.0,False
+Wonka Gum,Atlantic,Same Day,1,1,1269.0,1269.0,0.0,8.75,4.55,False
+Laffy Taffy,Gulf,Standard Class,2,2,1092.0,1092.0,258.8010819142764,21.89,13.64,False
+Lickable Wallpaper,Interior,Standard Class,8,8,1091.5,1228.25,362.42979615762437,600.0,300.0,False
+Wonka Gum,Interior,Second Class,4,4,1090.5,1090.0,210.73680267100957,21.25,11.05,False
+Kazookles,Gulf,First Class,4,4,1089.5,1180.75,350.15746457843795,42.25,3.25,False
+Wonka Gum,Gulf,First Class,4,4,1089.5,1180.75,350.15746457843795,28.75,14.95,False
+Kazookles,Gulf,Same Day,2,2,1086.5,1086.5,258.0939751330898,29.25,2.25,False
+Fizzy Lifting Drinks,Gulf,Standard Class,1,1,909.0,909.0,0.0,15.0,9.0,False
+Fizzy Lifting Drinks,Interior,First Class,1,1,907.0,907.0,0.0,7.5,4.5,False
+Lickable Wallpaper,Gulf,First Class,1,1,906.0,906.0,0.0,80.0,40.0,False
+Lickable Wallpaper,Pacific,Same Day,1,1,904.0,904.0,0.0,40.0,20.0,False

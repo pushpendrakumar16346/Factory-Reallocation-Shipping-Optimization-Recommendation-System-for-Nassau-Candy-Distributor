@@ -1,0 +1,21 @@
+Feature,Data_Type,Missing_Count,Missing_Percentage,Unique_Values
+Ship Mode,object,0,0.0,4
+Country/Region,object,0,0.0,2
+City,object,0,0.0,542
+State/Province,object,0,0.0,59
+Division,object,0,0.0,3
+Region,object,0,0.0,4
+Product ID,object,0,0.0,15
+Product Name,object,0,0.0,15
+Units,int64,0,0.0,14
+Sales,float64,0,0.0,88
+Gross Profit,float64,0,0.0,121
+Cost,float64,0,0.0,95
+Order_Year,int64,0,0.0,2
+Order_Month,int64,0,0.0,12
+Order_Quarter,int64,0,0.0,4
+Order_Weekday,object,0,0.0,7
+Profit_Margin_Pct,float64,0,0.0,18
+Sales_Per_Unit,float64,0,0.0,10
+Cost_Per_Unit,float64,0,0.0,17
+Profit_Per_Unit,float64,0,0.0,18

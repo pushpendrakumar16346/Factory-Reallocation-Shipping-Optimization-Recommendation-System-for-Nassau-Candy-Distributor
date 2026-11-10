@@ -1,0 +1,3 @@
+Prediction_Bias,Record_Count,Mean_Residual,Mean_Absolute_Error
+Overprediction,960,-153.86247319773673,153.86247319773676
+Underprediction,1102,127.30760890747138,127.3076089074714

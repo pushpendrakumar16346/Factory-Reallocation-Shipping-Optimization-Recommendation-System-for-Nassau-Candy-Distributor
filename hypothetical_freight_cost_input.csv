@@ -1,0 +1,5 @@
+Scenario_ID,Scenario_Name,Additional_Freight_Cost_Per_Unit,Assumption_Source
+BASELINE,Historical baseline,0.0,No hypothetical adjustment
+FREIGHT_01,User freight scenario 1,,Enter a user-supplied assumption
+FREIGHT_02,User freight scenario 2,,Enter a user-supplied assumption
+FREIGHT_03,User freight scenario 3,,Enter a user-supplied assumption

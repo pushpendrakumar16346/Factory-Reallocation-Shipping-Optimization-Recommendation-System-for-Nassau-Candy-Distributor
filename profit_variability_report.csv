@@ -1,0 +1,16 @@
+Product Name,Order_Lines,Mean_Gross_Profit,Median_Gross_Profit,Std_Gross_Profit,Minimum_Gross_Profit,Maximum_Gross_Profit,Gross_Profit_IQR,Gross_Profit_CV_Pct,Interpretation
+Everlasting Gobstopper,3,34.666666666666664,32.0,12.220201853215572,24.0,48.0,12.0,35.25058226889108,Descriptive variability of historical order-line gross profit
+Fizzy Lifting Drinks,6,7.875,7.875,2.359819908382841,4.5,11.25,2.25,29.965967090575756,Descriptive variability of historical order-line gross profit
+Fun Dip,3,1.5999999999999999,1.8,0.9165151389911681,0.6,2.4,0.9000000000000001,57.282196186948006,Descriptive variability of historical order-line gross profit
+Hair Toffee,4,14.875,17.5,5.25,7.0,17.5,2.625,35.294117647058826,Descriptive variability of historical order-line gross profit
+Kazookles,96,0.9661458333333334,0.75,0.5112160317716481,0.25,2.25,0.75,52.91292619954524,Descriptive variability of historical order-line gross profit
+Laffy Taffy,10,3.3480000000000003,2.48,2.191056569075497,1.24,7.44,3.1000000000000005,65.44374459604232,Descriptive variability of historical order-line gross profit
+Lickable Wallpaper,94,41.808510638297875,40.0,24.272767428090372,10.0,130.0,30.0,58.05700097304059,Descriptive variability of historical order-line gross profit
+Nerds,4,1.75,1.75,0.9036961141150639,0.7,2.8,1.05,51.63977794943222,Descriptive variability of historical order-line gross profit
+SweeTARTS,10,2.87,2.8,1.0667187487284964,1.4,4.9,1.225,37.167900652560846,Descriptive variability of historical order-line gross profit
+Wonka Bar - Fudge Mallows,1818,9.127392739273926,7.2,5.273759082526491,2.4,33.6,7.2,57.77946926545874,Descriptive variability of historical order-line gross profit
+Wonka Bar - Milk Chocolate,2137,8.162550304164716,6.33,4.85999790967468,2.11,29.54,6.330000000000001,59.54018938413158,Descriptive variability of historical order-line gross profit
+Wonka Bar - Nutty Crunch Surprise,1810,9.29279005524862,7.47,5.40477182087477,2.49,34.86,7.469999999999999,58.16091602997234,Descriptive variability of historical order-line gross profit
+Wonka Bar - Triple Dazzle Caramel,2015,9.235831265508684,7.35,5.423458232247809,2.45,34.3,7.35,58.72192850146336,Descriptive variability of historical order-line gross profit
+Wonka Bar -Scrumdiddlyumptious,2064,9.378633720930232,7.5,5.565863850375573,2.5,35.0,7.5,59.346211996255626,Descriptive variability of historical order-line gross profit
+Wonka Gum,120,2.5891666666666664,1.95,1.6852945698348545,0.65,7.8,1.95,65.09023121344788,Descriptive variability of historical order-line gross profit

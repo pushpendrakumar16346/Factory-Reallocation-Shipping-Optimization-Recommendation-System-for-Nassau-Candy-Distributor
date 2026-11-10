@@ -1,0 +1,36 @@
+{
+    "title": "Nassau Candy Analytics",
+    "page_icon": "\ud83c\udf6c",
+    "layout": "wide",
+    "data_path": "C:\\Users\\hp\\Nassau_Candy_Final_Submission\\data\\processed\\app_bundle\\data\\processed_dataset.csv",
+    "model_available": true,
+    "products": [
+        "Everlasting Gobstopper",
+        "Fizzy Lifting Drinks",
+        "Fun Dip",
+        "Hair Toffee",
+        "Kazookles",
+        "Laffy Taffy",
+        "Lickable Wallpaper",
+        "Nerds",
+        "SweeTARTS",
+        "Wonka Bar - Fudge Mallows",
+        "Wonka Bar - Milk Chocolate",
+        "Wonka Bar - Nutty Crunch Surprise",
+        "Wonka Bar - Triple Dazzle Caramel",
+        "Wonka Bar -Scrumdiddlyumptious",
+        "Wonka Gum"
+    ],
+    "regions": [
+        "Atlantic",
+        "Gulf",
+        "Interior",
+        "Pacific"
+    ],
+    "ship_modes": [
+        "First Class",
+        "Same Day",
+        "Second Class",
+        "Standard Class"
+    ]
+}

@@ -1,0 +1,2 @@
+Scenario_ID,Scenario_Name,Scenario_Type,Historical_Sales,Historical_Gross_Profit,Additional_Freight_Cost,Additional_Manufacturing_Cost,Total_Additional_Cost,Hypothetical_Adjusted_Gross_Profit,Historical_Margin_Pct,Hypothetical_Adjusted_Margin_Pct
+BASELINE,Historical baseline,Historical baseline,141783.63,93442.8,0.0,0.0,0.0,93442.8,65.90521063679918,65.90521063679918

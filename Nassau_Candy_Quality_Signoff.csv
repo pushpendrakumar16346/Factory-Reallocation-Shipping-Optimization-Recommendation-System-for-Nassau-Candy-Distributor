@@ -1,0 +1,23 @@
+Quality Check,Issue Count,Status
+Missing Values,0,PASS
+Exact Duplicate Rows,0,PASS
+Duplicate Row IDs,0,PASS
+Missing Customer IDs,0,PASS
+Blank Customer IDs,0,PASS
+Missing Product IDs,0,PASS
+Blank Product IDs,0,PASS
+Product ID Mapping Conflicts,0,PASS
+Product Name Mapping Conflicts,0,PASS
+Negative Sales,0,PASS
+Zero Sales,0,PASS
+Negative Units,0,PASS
+Zero Units,0,PASS
+Negative Cost,0,PASS
+Zero Cost,0,PASS
+Negative Gross Profit,0,PASS
+Zero Gross Profit,0,PASS
+Order Date Parsing Failures,0,PASS
+Ship Date Parsing Failures,0,PASS
+Ship Before Order,0,PASS
+Negative Lead Time,0,PASS
+Numerical Outlier Records,1034,WARNING
