@@ -1,0 +1,25 @@
+Nassau Candy Distributor is the business context for this research project.
+The distribution business involves managing products, customer orders,
+shipment activities, and the movement of goods across different regions.
+
+Effective distribution management requires an understanding of product demand,
+sales performance, order characteristics, shipping methods, and delivery-related
+patterns. Analysing these areas can help identify differences in business
+performance and provide useful information for management review.
+
+This project examines historical transaction-level data associated with
+Nassau Candy Distributor. The analysis focuses on product performance,
+regional performance, shipping performance, factory-reference analysis,
+and business decision support.
+
+The project combines descriptive analytics, predictive modelling, clustering,
+scenario simulation, profitability sensitivity analysis, and optimization-
+oriented methods. These techniques are presented through an interactive
+Streamlit dashboard to make the analytical results easier to explore.
+
+An important consideration is that the available dataset does not establish
+every operational detail. Factory-reference mappings should not be interpreted
+as verified historical dispatch records, and alternative factory scenarios
+should not be treated as confirmed cost savings or operational improvements.
+The analysis therefore distinguishes observed data from assumptions and areas
+requiring further validation.

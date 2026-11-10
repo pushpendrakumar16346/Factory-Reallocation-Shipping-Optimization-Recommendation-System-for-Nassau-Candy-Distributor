@@ -1,0 +1,30 @@
+Data quality assessment was conducted before the main analytical activities.
+The purpose was to identify issues that could affect the reliability and
+interpretation of the results.
+
+The assessment included:
+
+- Inspection of dataset dimensions and column names.
+- Review of data types and expected variable formats.
+- Identification of missing values.
+- Examination of duplicate records.
+- Validation of date fields and date parsing.
+- Review of numeric variables and unusual values.
+- Examination of categorical values and inconsistent labels.
+- Validation of important derived variables.
+
+Original data was preserved to support traceability. Transformations were
+performed in the processed dataset rather than silently changing the raw
+source.
+
+Date parsing followed the day-first format where appropriate. Lead time was
+calculated as the difference between Ship Date and Order Date. Negative or
+otherwise invalid calculated values were considered during validation.
+
+Lead time in this research represents the interval between the recorded
+order date and ship date. It is not an independently verified measure of
+carrier transit time.
+
+Data quality checks were used to improve consistency and reduce the risk of
+misleading analytical conclusions. Remaining limitations were documented
+rather than hidden.

@@ -1,0 +1,51 @@
+NASSAU CANDY DISTRIBUTOR - DATA ANALYTICS PROJECT
+
+PROJECT OBJECTIVE:
+Analyze sales, profit, products, customers, regions, shipping,
+factory allocation, logistics and business performance.
+
+DATASET:
+Nassau Candy Distributor.csv
+
+DATA PROTECTION RULES:
+1. Original CSV must never be modified.
+2. Original rows must remain unchanged.
+3. Original date values must remain unchanged.
+4. All transformations must use separate working copies.
+5. Processed datasets must be saved in data/processed.
+6. Original CSV must never be overwritten.
+
+PROJECT STRUCTURE:
+data/raw
+data/processed
+notebooks
+src
+models
+reports/figures
+reports/research_paper
+reports/executive_summary
+
+REPRODUCIBILITY:
+Random seed = 42
+
+TOOLS:
+Python, Pandas, NumPy, Matplotlib, Seaborn,
+SciPy, Scikit-learn, Statsmodels, Plotly,
+Folium, GeoPy and other supporting libraries.
+
+ANALYSIS SCOPE:
+Exploratory Data Analysis
+Data Quality Audit
+Sales Analysis
+Profitability Analysis
+Product Analysis
+Customer Analysis
+Regional Analysis
+Shipping Analysis
+Factory Allocation
+Logistics Analysis
+Statistical Analysis
+Machine Learning
+Business Recommendations
+Final Research Paper
+Executive Summary

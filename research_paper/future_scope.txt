@@ -1,0 +1,27 @@
+Future research can extend this project by incorporating additional
+operational and business information.
+
+Potential improvements include:
+
+- Integrating verified historical factory dispatch and fulfilment
+  records.
+- Incorporating factory-specific production capacity and availability.
+- Collecting verified manufacturing and transportation cost data.
+- Including actual road and freight-route distances instead of relying
+  only on straight-line geographical distances.
+- Incorporating carrier transit events and delivery confirmation dates.
+- Testing additional predictive models and evaluating them using
+  consistent validation procedures.
+- Monitoring model performance as new business data becomes available.
+- Investigating additional clustering methods and validating cluster
+  interpretations with business stakeholders.
+- Developing more comprehensive scenario simulations using verified
+  operational constraints.
+- Extending optimization analysis with validated cost, capacity,
+  compatibility, and service-level constraints.
+- Establishing formal KPI definitions and monitoring thresholds.
+- Improving dashboard deployment, access control, and automated data
+  refresh processes.
+
+These improvements could increase the practical value of the analytical
+framework and support more detailed operational decision-making.

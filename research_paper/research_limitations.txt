@@ -1,0 +1,35 @@
+This research has several limitations that should be considered when
+interpreting its findings.
+
+First, the analysis is limited to the information contained in the
+available dataset. Missing, incomplete, or unrecorded business
+information may affect the interpretation of results.
+
+Second, calculated lead time is based on the difference between the
+recorded Ship Date and Order Date. It is not an independently verified
+measure of carrier transit time.
+
+Third, the product-to-factory relationship is treated as reference
+mapping information. It does not establish verified historical
+dispatch or fulfilment decisions.
+
+Fourth, factory-specific capacity, cost, and lead-time evidence may
+not be available for every alternative factory option. Consequently,
+scenario assessments cannot establish confirmed factory-specific
+savings or operational improvements.
+
+Fifth, Haversine distances represent straight-line geographical
+distances. They do not represent actual road distances, freight routes,
+or transportation costs.
+
+Sixth, model performance depends on the available data, selected
+features, and evaluation methodology. Predictive results should not
+be treated as guaranteed future outcomes.
+
+Seventh, clustering results depend on the selected features and
+clustering methodology. Identified groups require business
+interpretation and validation.
+
+Finally, optimization-oriented recommendations are indicative
+priorities rather than proven globally optimal decisions. Additional
+operational and financial information is needed before implementation.

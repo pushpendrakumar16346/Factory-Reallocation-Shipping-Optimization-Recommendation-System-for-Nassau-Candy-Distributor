@@ -1,0 +1,23 @@
+Clustering analysis was performed to identify groups of similar business
+observations based on selected analytical features.
+
+The purpose of clustering was to explore patterns that may not be
+immediately visible through individual variables or conventional summary
+statistics.
+
+The workflow involved selecting relevant variables, preparing the data,
+applying the clustering approach used in the project, and examining the
+resulting group characteristics.
+
+Cluster profiles were reviewed to understand how groups differed across
+the selected business dimensions. Appropriate visualizations and summary
+statistics were used to support interpretation.
+
+The resulting clusters represent similarities within the selected data
+and features. They should not automatically be interpreted as official
+business segments, customer types, or operational categories without
+additional business validation.
+
+The final paper should report the actual clustering algorithm, selected
+features, number of clusters, and verified cluster characteristics from
+the completed clustering notebook.

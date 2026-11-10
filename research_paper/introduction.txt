@@ -1,0 +1,26 @@
+The distribution industry involves several interconnected business activities,
+including product management, order processing, shipping, regional distribution,
+and supply chain coordination. Analysing these activities is important for
+understanding business performance and identifying opportunities for improvement.
+
+Nassau Candy Distributor provides the business context for this research. The
+project uses historical business data to examine product performance, regional
+patterns, shipping characteristics, and factory-reference information.
+
+Traditional reporting methods can describe past business performance, but
+analytical techniques can provide additional insights. Exploratory data analysis
+helps identify patterns and relationships, predictive modelling supports the
+examination of lead-time behaviour, and clustering helps identify groups of
+similar business records. Scenario simulation and optimization methods can
+further support structured business evaluation.
+
+This research applies a combination of data analytics, machine learning,
+statistical analysis, and decision-support techniques to the available Nassau
+Candy Distributor dataset. It also presents the results through an interactive
+Streamlit dashboard.
+
+The overall purpose is to develop a structured analytical framework that helps
+interpret business data, evaluate operational patterns, and support informed
+management review. The research also considers the limitations of the available
+data to ensure that analytical findings are not interpreted as unsupported
+operational guarantees.

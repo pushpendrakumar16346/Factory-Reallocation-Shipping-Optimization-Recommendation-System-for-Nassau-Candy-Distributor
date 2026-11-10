@@ -1,0 +1,17 @@
+This research is guided by the following questions:
+
+1. What patterns can be identified in product-level sales and profitability?
+2. How does business performance vary across geographical regions?
+3. What patterns are visible across shipping methods and order lead times?
+4. Can historical business features support predictive modelling of order
+   lead-time behaviour?
+5. Can clustering identify meaningful groups within the available business
+   observations?
+6. What insights can be obtained from product-to-factory reference mappings?
+7. How can alternative factory scenarios be assessed when factory-specific
+   evidence is incomplete?
+8. How can profitability sensitivity and optimization-oriented analysis
+   support business review?
+9. How can an interactive dashboard improve access to analytical findings?
+10. What data limitations should be considered before operational decisions
+    are made?

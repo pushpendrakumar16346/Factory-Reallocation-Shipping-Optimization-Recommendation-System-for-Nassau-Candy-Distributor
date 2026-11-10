@@ -1,0 +1,29 @@
+An interactive Streamlit dashboard was developed to communicate the
+project's analytical findings and provide a practical interface for
+exploring the available data.
+
+The dashboard contains eight main pages:
+
+1. Home
+2. Product Performance
+3. Region Analysis
+4. Ship Mode Analysis
+5. Factory Explorer
+6. Scenario Simulator
+7. Recommendations
+8. Risk and Impact
+
+The application includes relevant filters for product, region, and
+shipping method. It also presents KPI cards, charts, scenario controls,
+recommendation panels, and risk information.
+
+CSV and Excel export functionality is provided to support further
+review of the analytical data.
+
+The application uses reusable utility modules for prediction,
+feature preparation, scenario assessment, and recommendation logic.
+Validation checks were performed on the application source, model
+loading, filters, scenario logic, and data export functionality.
+
+The dashboard is a decision-support interface. It does not replace
+business validation, operational planning, or management approval.

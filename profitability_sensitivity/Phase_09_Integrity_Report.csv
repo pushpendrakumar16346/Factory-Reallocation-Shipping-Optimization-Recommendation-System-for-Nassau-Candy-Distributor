@@ -1,0 +1,24 @@
+Check,Passed
+Original CSV exists,True
+Original CSV SHA-256 unchanged,True
+Original row count preserved,True
+Original columns preserved,True
+historical_sales_baseline.csv,True
+historical_cost_baseline.csv,True
+historical_gross_profit_baseline.csv,True
+product_wise_profit_margin.csv,True
+division_wise_profit_margin.csv,True
+region_wise_profit_margin.csv,True
+profit_variability_report.csv,True
+margin_stability_proxy.csv,True
+high_profit_product_ranking.csv,True
+low_margin_product_risk_list.csv,True
+hypothetical_freight_cost_input.csv,True
+hypothetical_manufacturing_cost_input.csv,True
+cost_sensitivity_scenarios.csv,True
+hypothetical_profit_impact.csv,True
+profit_sensitivity_scenario_summary.csv,True
+phase09_historical_profit_by_product.png,True
+phase09_product_margin.png,True
+phase09_hypothetical_profit_sensitivity.png,True
+phase09_margin_variability.png,True

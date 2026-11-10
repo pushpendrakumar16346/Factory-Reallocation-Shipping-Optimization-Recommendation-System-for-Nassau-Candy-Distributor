@@ -1,0 +1,40 @@
+The following references provide methodological background for
+the analytical techniques and software used in this project.
+The exact software versions and project-specific sources should
+be verified before final submission.
+
+1. James, G., Witten, D., Hastie, T., and Tibshirani, R. (2021).
+   An Introduction to Statistical Learning: With Applications in R.
+   Second Edition. Springer.
+
+2. Pedregosa, F., Varoquaux, G., Gramfort, A., et al. (2011).
+   Scikit-learn: Machine Learning in Python.
+   Journal of Machine Learning Research, 12, 2825–2830.
+
+3. McKinney, W. (2010).
+   Data Structures for Statistical Computing in Python.
+   Proceedings of the 9th Python in Science Conference.
+
+4. Hunter, J. D. (2007).
+   Matplotlib: A 2D Graphics Environment.
+   Computing in Science & Engineering, 9(3), 90–95.
+
+5. The pandas development team.
+   pandas documentation.
+   https://pandas.pydata.org/docs/
+
+6. The scikit-learn developers.
+   scikit-learn documentation.
+   https://scikit-learn.org/stable/
+
+7. Streamlit, Inc.
+   Streamlit documentation.
+   https://docs.streamlit.io/
+
+8. Nassau Candy Distributor dataset.
+   Original project dataset supplied for this research.
+   Add the appropriate source, access details, or institutional
+   attribution required by the submission guidelines.
+
+Only include references that were actually consulted and are
+relevant to the final submitted research paper.

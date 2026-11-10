@@ -1,0 +1,36 @@
+Exploratory data analysis was conducted to understand the characteristics
+and patterns of the available business data.
+
+The analysis examined product performance, regional performance, shipping
+methods, sales, profitability, and lead-time behaviour.
+
+Product-level analysis was used to compare business performance across
+products. Regional analysis examined geographical differences in the
+available records. Shipping analysis compared order characteristics and
+lead-time patterns across shipping methods.
+
+Financial analysis provided a basis for reviewing sales and profitability
+indicators. Visualizations and summary statistics were used to make
+patterns easier to interpret.
+
+The exploratory analysis provides the descriptive foundation for the
+subsequent predictive, clustering, scenario, and decision-support
+activities.
+
+The final submitted paper should include the verified numerical findings
+and relevant charts from the exploratory analysis notebook. In particular,
+the following values should be inserted from the actual outputs:
+
+- Leading products by the selected sales or profitability measure:
+  [INSERT VERIFIED PRODUCT FINDINGS]
+- Regional performance observations:
+  [INSERT VERIFIED REGIONAL FINDINGS]
+- Shipping method comparisons:
+  [INSERT VERIFIED SHIPPING FINDINGS]
+- Overall sales and profitability observations:
+  [INSERT VERIFIED FINANCIAL FINDINGS]
+- Lead-time distribution and notable patterns:
+  [INSERT VERIFIED LEAD-TIME FINDINGS]
+
+No numerical ranking or business conclusion should be added unless it is
+supported by the completed analysis.

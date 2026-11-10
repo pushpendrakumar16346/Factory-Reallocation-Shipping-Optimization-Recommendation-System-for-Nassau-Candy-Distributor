@@ -1,0 +1,23 @@
+Predictive modelling was used to examine lead-time behaviour using the
+available historical business features.
+
+The modelling workflow included preparing the target variable, selecting
+predictor features, preparing the input data, defining a machine learning
+pipeline, training the model, and saving the resulting model artifact.
+
+The model uses 20 predictor features. Factory information is not included
+as a predictor.
+
+A pipeline-based approach was used to maintain consistency between model
+preparation and prediction. The saved model artifact was subsequently
+reloaded to verify that it could be used outside the original training
+session.
+
+The modelling process was designed to support reproducibility and
+consistent prediction behaviour. Repeated predictions and predictions
+after reloading the saved pipeline were compared during validation.
+
+The model estimates lead-time behaviour based on the features and
+relationships represented in the available dataset. Its predictions
+should be interpreted as model estimates rather than guaranteed future
+delivery outcomes.

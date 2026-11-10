@@ -1,0 +1,23 @@
+The primary objective of this research is to develop a data-driven analytical
+framework for examining product, regional, shipping, and factory-reference
+performance at Nassau Candy Distributor.
+
+The specific objectives are:
+
+1. To understand the structure, characteristics, and quality of the available
+   business dataset.
+2. To perform exploratory data analysis to examine product, regional, shipping,
+   sales, and profitability patterns.
+3. To engineer relevant analytical features from the original business data.
+4. To develop and evaluate a predictive model for analysing order lead-time
+   behaviour.
+5. To apply clustering techniques to identify groups of similar business
+   observations.
+6. To examine product-to-factory reference mappings and evaluate alternative
+   factory options using the available evidence.
+7. To conduct scenario simulation and profitability sensitivity analysis.
+8. To develop optimization-oriented recommendations and assess relevant
+   business KPIs and risks.
+9. To create an interactive Streamlit dashboard for communicating analytical
+   results and supporting business review.
+10. To identify limitations and opportunities for future research.

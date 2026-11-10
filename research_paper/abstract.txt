@@ -1,0 +1,22 @@
+This research presents a data-driven analysis of product, regional, shipping,
+and factory-reference performance at Nassau Candy Distributor. The study uses
+a dataset containing 10,194 records and 18 original variables to examine
+business patterns, assess data quality, engineer analytical features, and
+develop decision-support insights.
+
+The analytical methodology includes exploratory data analysis, lead-time
+predictive modelling, clustering, factory-reference analysis, scenario
+simulation, profitability sensitivity analysis, optimization recommendations,
+and KPI and risk assessment. A Streamlit dashboard was also developed to
+present key findings, interactive analyses, and decision-support information.
+
+The study aims to support a better understanding of product performance,
+regional patterns, shipping characteristics, and factory-reference options.
+It also demonstrates how predictive analytics and analytical tools can support
+business review and planning. However, factory-reference mappings are treated
+as reference information rather than verified historical dispatch records,
+and scenario outputs are interpreted within the limits of available evidence.
+
+The findings provide an analytical foundation for business review and future
+investigation. The study also identifies data and methodological limitations
+that should be considered before operational decisions are made.

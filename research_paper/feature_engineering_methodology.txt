@@ -1,0 +1,25 @@
+Feature engineering was used to transform the original business variables
+into features suitable for descriptive and predictive analysis.
+
+The process included date-related feature preparation, financial feature
+calculations, safe numerical operations, and model feature preparation.
+
+Order-date features were derived to support the examination of temporal
+patterns. Financial features were prepared to support revenue and
+profitability analysis. Safe division methods were used where ratios or
+other division-based measures were required, helping avoid invalid
+calculations caused by zero denominators.
+
+Lead time was calculated using the recorded Ship Date and Order Date.
+Additional lead-time categories were used for grouped analysis.
+
+The model preparation process selected 20 predictor features for the
+lead-time prediction pipeline. Factory was not included as a model
+predictor.
+
+Feature engineering was performed with attention to data types, missing
+values, and consistency between training and prediction workflows.
+
+Derived features are analytical representations of the available source
+data. They should not be interpreted as independently verified operational
+measurements.

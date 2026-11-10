@@ -1,0 +1,8 @@
+The model predicts recorded date differences, not necessarily actual physical transit duration.
+The dataset contains unusually large recorded lead-time values that require business interpretation.
+Historical patterns may not represent future shipping conditions.
+Prediction performance depends on the quality and availability of input features.
+Categorical values not observed during training may reduce prediction reliability.
+The dataset may not contain all operational factors affecting shipping time.
+Model predictions show associations and do not establish causation.
+Grouped validation reduces the risk of related order records appearing in both training and testing.

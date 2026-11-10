@@ -1,0 +1,20 @@
+Factory-reference analysis examined the relationship between products
+and their associated factory reference information.
+
+The purpose was to understand the available product-to-factory mapping
+and review alternative factory options within the limits of the data.
+
+The analysis distinguishes the reference factory mapping from verified
+historical dispatch information. A product-to-factory mapping indicates
+a reference relationship in the available data; it does not independently
+prove that a particular factory fulfilled a specific historical order.
+
+Alternative factory options were reviewed using available compatibility
+and recommendation information. These options require additional
+operational validation before they can be treated as feasible production
+or distribution alternatives.
+
+The analysis therefore focuses on organizing available reference
+information and identifying options that may warrant further
+investigation. It does not establish actual factory capacity, confirmed
+dispatch history, or guaranteed operational improvements.

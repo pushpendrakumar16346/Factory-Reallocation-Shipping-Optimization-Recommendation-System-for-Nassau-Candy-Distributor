@@ -1,0 +1,40 @@
+PHASE 08 — SCENARIO SIMULATION
+EVIDENCE, ASSUMPTIONS AND LIMITATIONS
+
+1. The baseline factory assignment comes from the supplied project
+   product-to-factory reference mapping.
+
+2. The baseline mapping is not verified historical order-level dispatch
+   or manufacturing history.
+
+3. Alternative factory assignments are hypothetical candidate scenarios.
+
+4. Factory-product compatibility is unknown unless independently verified.
+   No manufacturing compatibility is inferred from location or mapping.
+
+5. Historical product, region and ship-mode performance is descriptive.
+   It does not establish how an alternative factory would perform.
+
+6. The available lead-time model is not treated as a validated
+   factory-specific model. Factory-specific lead-time predictions and
+   reductions are therefore not reported.
+
+7. Straight-line distances are calculated from supplied factory coordinates.
+   They are not road distances, delivery routes, travel times or freight costs.
+
+8. Distance sensitivity penalties are illustrative user assumptions only.
+   They are not calibrated transport or delivery-time relationships.
+
+9. The dataset does not provide actual factory dispatch records,
+   factory-product compatibility, production time, operating calendars,
+   capacity, inventory, throughput or factory-specific costs.
+
+10. The derived lead-time values are unusually long and should not be
+    interpreted as verified physical transit durations without clarification
+    of the source date semantics.
+
+11. No actual cost savings, profit improvements, capacity improvements,
+    lead-time reductions or causal benefits are claimed.
+
+12. All scenario outputs are saved separately. The original CSV is not
+    modified.

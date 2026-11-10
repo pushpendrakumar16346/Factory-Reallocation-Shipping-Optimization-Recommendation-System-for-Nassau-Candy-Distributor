@@ -1,0 +1,23 @@
+The availability of historical business data creates opportunities to
+understand product performance, regional differences, shipping characteristics,
+and operational patterns. However, raw transaction data alone does not
+automatically provide clear and actionable business insights.
+
+The main problem addressed by this research is the need to transform the
+available Nassau Candy Distributor dataset into a structured analytical
+framework that can support business performance evaluation and informed
+decision-making.
+
+The research examines product-level sales and profitability, regional
+performance, shipping methods, order lead-time behaviour, predictive modelling,
+clustering, factory-reference mappings, scenario simulation, profitability
+sensitivity, optimization recommendations, and business risks.
+
+A further challenge is ensuring that analytical conclusions remain consistent
+with the available evidence. Reference factory mappings do not establish actual
+historical dispatch decisions, and scenario simulations cannot independently
+confirm factory-specific cost savings or operational improvements.
+
+Therefore, the research focuses on developing reliable analytical insights
+while clearly distinguishing measured results, model-based estimates,
+reference information, and assumptions requiring additional validation.

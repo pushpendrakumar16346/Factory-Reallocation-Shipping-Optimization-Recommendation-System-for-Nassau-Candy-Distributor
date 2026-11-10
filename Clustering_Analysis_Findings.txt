@@ -1,0 +1,64 @@
+NASSAU CANDY DISTRIBUTOR — CLUSTERING ANALYSIS
+
+OBJECTIVE
+Identify exploratory product, destination-performance, product-region, and ship-mode performance groups.
+
+IMPORTANT LIMITATIONS
+- Clusters are descriptive, not causal.
+- Region groups are based on only four regions.
+- Ship-mode groups are based on only four ship-mode categories.
+- Product-region combinations below the minimum record threshold were not included in clustering.
+- Ship Date was not used as a clustering feature.
+- Lead-time statistics are derived from the supplied dates. The unusually long values are not verified transit durations.
+- These clusters do not represent actual factory assignments, physical routes, traffic congestion, or transport savings.
+
+PRODUCT RESULTS
+Status counts: {'Clustered': 15}
+Cluster profile averages:
+         Records  Sales_Total  Units_Total  Gross_Profit_Total  Cost_Total  Profit_Margin_Pct  Lead_Time_Median  Lead_Time_Mean  Lead_Time_Std
+Cluster                                                                                                                                       
+0          48.50      3995.00       203.00             2017.00     1978.00              65.00           1273.50         1366.90         250.90
+1          35.57       289.18       136.57               74.95      214.22              45.05           1273.64         1309.47         256.58
+2           4.00        76.50        17.00               59.50       17.00              77.78           1455.00         1455.25         209.88
+3        1968.80     26338.58      7455.00            17764.92     8573.66              67.54           1274.00         1321.25         261.86
+Best evaluated silhouette: 0.5277 at k=4.
+
+REGION RESULTS
+Status counts: {'Clustered': 4}
+Cluster profile averages:
+         Records  Sales_Total  Units_Total  Gross_Profit_Total  Cost_Total  Profit_Margin_Pct  Lead_Time_Median  Lead_Time_Mean  Lead_Time_Std
+Cluster                                                                                                                                       
+0         1977.5     27142.43       7514.5            17991.58     9150.85              66.25            1274.0         1317.23         263.71
+1         3119.5     43749.38      11812.5            28729.82    15019.56              65.66            1274.0         1322.47         261.51
+Best evaluated silhouette: 0.3037 at k=2.
+
+PRODUCT_REGION RESULTS
+Status counts: {'Clustered': 32, 'Below minimum sample threshold': 21}
+Cluster profile averages:
+         Records  Sales_Total  Units_Total  Gross_Profit_Total  Cost_Total  Profit_Margin_Pct  Lead_Time_Median  Lead_Time_Mean  Lead_Time_Std
+Cluster                                                                                                                                       
+0          492.2      6584.64      1863.75             4441.23     2143.41              67.54           1273.75         1320.40         261.76
+1           27.0       225.41       106.12               50.43      174.98              29.85           1273.38         1283.76         279.99
+2           23.5      1965.00        98.25              982.50      982.50              50.00           1274.00         1331.08         301.83
+Best evaluated silhouette: 0.5376 at k=3.
+
+SHIP_MODE RESULTS
+Status counts: {'Clustered': 4}
+Cluster profile averages:
+         Records  Sales_Total  Units_Total  Gross_Profit_Total  Cost_Total  Profit_Margin_Pct  Lead_Time_Median  Lead_Time_Mean  Lead_Time_Std
+Cluster                                                                                                                                       
+0          547.0      7113.67       1975.0             4700.73     2412.94              66.08            1269.0         1333.44         253.81
+1         6120.0     85490.35      23409.0            56424.46    29065.89              66.00            1274.0         1314.33         262.40
+2         1763.5     24589.80       6635.0            16158.80     8431.00              65.71            1272.5         1331.06         263.72
+Best evaluated silhouette: 0.2756 at k=3.
+
+SLOW COMBINATION SCREENING
+Minimum records required: 10
+Slow combinations are ranked using median derived lead time and must be interpreted with the date-semantics caveat.
+
+BUSINESS INTERPRETATION GUIDANCE
+- Review high-sales and high-profit product segments for commercial importance.
+- Review low-margin segments separately from high-volume segments.
+- Investigate destination groups with higher derived lead-time medians, while validating the date meaning first.
+- Use small-sample groups as investigation leads, not firm conclusions.
+- Do not make factory reassignment or transport-savings claims from these clusters alone.

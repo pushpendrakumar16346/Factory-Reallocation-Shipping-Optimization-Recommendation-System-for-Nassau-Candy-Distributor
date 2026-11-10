@@ -1,0 +1,28 @@
+This research developed a data-driven analytical framework for
+examining product, regional, shipping, and factory-reference
+performance at Nassau Candy Distributor.
+
+Using a dataset containing 10,194 records and 18 original columns,
+the project carried out data quality assessment, feature engineering,
+exploratory data analysis, lead-time predictive modelling, clustering,
+factory-reference analysis, scenario simulation, profitability
+sensitivity analysis, optimization-oriented recommendations, and
+KPI and risk assessment.
+
+An interactive Streamlit dashboard was also developed to present
+analytical findings through eight main pages, filters, visualizations,
+scenario controls, and downloadable reports.
+
+The project demonstrates how different analytical techniques can
+be combined into a structured decision-support workflow. It also
+emphasizes the importance of interpreting results according to the
+evidence available.
+
+In particular, reference factory mappings should not be treated
+as verified dispatch records, scenario assessments should not be
+interpreted as guaranteed cost savings, and predictive estimates
+should not be considered certain future outcomes.
+
+Overall, the research provides an analytical foundation for business
+review and identifies areas where additional operational data and
+validation could strengthen future decision-making.

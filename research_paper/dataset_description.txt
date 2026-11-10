@@ -1,0 +1,25 @@
+The research uses the Nassau Candy Distributor dataset supplied for this
+project.
+
+The original dataset contains 10,194 records and 18 columns. The processed
+analytical dataset contains 10,194 records and 34 columns after the project's
+data preparation and feature engineering activities.
+
+The data includes business information used to examine products, orders,
+sales, profitability, geographical regions, shipping characteristics, and
+related analytical variables.
+
+The original dataset is retained separately from the processed dataset to
+preserve data traceability. Date fields are interpreted using day-first
+parsing where required, without unnecessarily overwriting the original date
+strings.
+
+The processed dataset supports exploratory analysis, predictive modelling,
+clustering, scenario evaluation, and dashboard reporting.
+
+The predictive model uses 20 predictor features. Factory information is not
+included as a predictor in that model.
+
+The dataset represents the records available for this study. It should not
+automatically be interpreted as a complete representation of every
+operational event or supply-chain decision made by the business.

@@ -1,0 +1,20 @@
+Scenario simulation was used to examine alternative analytical
+conditions and support structured business review.
+
+The simulation process considered available factory-option information
+and relevant supporting evidence. The project included checks for
+factory-specific lead-time estimability, factory-specific cost
+availability, and capacity data availability.
+
+A scenario was treated as requiring further validation when the necessary
+factory-specific evidence was available. Where the evidence was
+incomplete, the scenario was classified as having insufficient
+factory-specific support.
+
+The scenario assessment deliberately avoids inventing factory-specific
+lead-time changes, cost savings, or probabilities of success when these
+cannot be supported by the available information.
+
+Scenario outputs should therefore be interpreted as structured
+assessments of available evidence, not as confirmed forecasts or
+operational guarantees.

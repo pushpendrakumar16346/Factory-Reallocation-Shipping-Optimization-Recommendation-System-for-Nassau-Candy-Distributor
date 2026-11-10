@@ -1,0 +1,26 @@
+FINAL RESEARCH PAPER AUDIT
+=================================================================
+
+Content status: REVIEW REQUIRED
+Reference status: 8 numbered reference entries found; source verification still required.
+Notebook evidence items: 217
+Incomplete content items: 11
+
+ITEMS REQUIRING REVIEW:
+Line 294: [INSERT VERIFIED PRODUCT FINDINGS]
+Line 296: [INSERT VERIFIED REGIONAL FINDINGS]
+Line 298: [INSERT VERIFIED SHIPPING FINDINGS]
+Line 300: [INSERT VERIFIED FINANCIAL FINDINGS]
+Line 302: [INSERT VERIFIED LEAD-TIME FINDINGS]
+Line 355: - Model algorithm: [INSERT ACTUAL MODEL ALGORITHM]
+Line 356: - MAE: [INSERT VERIFIED VALUE]
+Line 357: - MSE: [INSERT VERIFIED VALUE, IF CALCULATED]
+Line 358: - RMSE: [INSERT VERIFIED VALUE]
+Line 359: - R-squared: [INSERT VERIFIED VALUE]
+Line 360: - Test dataset size: [INSERT VERIFIED TEST SIZE]
+
+OUTPUT FILES:
+C:\Users\hp\Nassau_Candy_Final_Submission\reports\research_paper\research_paper_draft.md
+C:\Users\hp\Nassau_Candy_Final_Submission\reports\research_paper\notebook_evidence_report.txt
+C:\Users\hp\Nassau_Candy_Final_Submission\reports\research_paper\research_paper_draft.docx - python-docx not installed
+C:\Users\hp\Nassau_Candy_Final_Submission\reports\research_paper\research_paper_draft.pdf - CREATED

@@ -1,0 +1,32 @@
+The project combines descriptive analytics, predictive modelling,
+clustering, factory-reference analysis, scenario simulation,
+profitability sensitivity analysis, optimization-oriented
+recommendations, and KPI and risk assessment.
+
+The exploratory analysis provides an overview of product, regional,
+financial, and shipping patterns in the available records. Feature
+engineering prepares the dataset for further analytical activities.
+
+The lead-time modelling workflow demonstrates how historical business
+features can be used to estimate lead-time behaviour. Model
+reproducibility and artifact reload checks provide additional evidence
+that the modelling workflow can be reused consistently.
+
+Clustering provides a way to examine similarities between business
+observations. Factory-reference analysis organizes available mapping
+information, while scenario simulation distinguishes supported
+assessments from options that require additional evidence.
+
+The recommendation and risk analysis translates analytical outputs
+into structured areas for business review. The Streamlit dashboard
+makes these outputs accessible through interactive pages and
+downloadable reports.
+
+The overall contribution is an integrated analytical workflow that
+connects data preparation, analysis, modelling, and decision support.
+
+The final discussion should incorporate the verified numerical
+results, model evaluation metrics, cluster profiles, and most
+important findings from the completed project notebooks. Any
+differences between evaluation outputs should be disclosed rather
+than concealed.

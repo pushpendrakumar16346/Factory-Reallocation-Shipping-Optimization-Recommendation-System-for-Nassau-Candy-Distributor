@@ -1,0 +1,28 @@
+Before submitting the research paper, complete the following review:
+
+[ ] Confirm the final title and subtitle.
+[ ] Review the abstract for accuracy and completeness.
+[ ] Check the introduction and business background.
+[ ] Confirm that the problem statement and research questions
+    match the completed project.
+[ ] Verify dataset dimensions and variable descriptions.
+[ ] Add actual data quality findings.
+[ ] Verify feature engineering descriptions.
+[ ] Insert numerical EDA findings and relevant charts.
+[ ] Confirm the actual predictive model algorithm.
+[ ] Insert verified model evaluation metrics.
+[ ] Add actual clustering methodology and cluster findings.
+[ ] Verify factory-reference analysis descriptions.
+[ ] Confirm scenario simulation evidence limitations.
+[ ] Review optimization recommendations.
+[ ] Add relevant KPI and risk findings.
+[ ] Include dashboard screenshots if required.
+[ ] Verify all figures, tables, captions, and numbering.
+[ ] Check that every reference was actually consulted.
+[ ] Check spelling, grammar, and academic formatting.
+[ ] Confirm that no unsupported savings, predictions, or
+    operational claims are presented as established facts.
+[ ] Save the final paper in the required submission format.
+
+The research paper should follow the formatting and citation
+requirements specified by the relevant institution or evaluator.
