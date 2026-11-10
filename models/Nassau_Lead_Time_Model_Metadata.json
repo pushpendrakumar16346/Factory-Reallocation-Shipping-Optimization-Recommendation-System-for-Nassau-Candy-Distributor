@@ -1,0 +1,33 @@
+{
+    "project": "Nassau Candy Distributor",
+    "target_variable": "Lead_Time_Days",
+    "selected_model": "Tuned Random Forest",
+    "predictor_features": [
+        "Ship Mode",
+        "Country/Region",
+        "City",
+        "State/Province",
+        "Division",
+        "Region",
+        "Product ID",
+        "Product Name",
+        "Units",
+        "Sales",
+        "Gross Profit",
+        "Cost",
+        "Order_Year",
+        "Order_Month",
+        "Order_Quarter",
+        "Order_Weekday",
+        "Profit_Margin_Pct",
+        "Sales_Per_Unit",
+        "Cost_Per_Unit",
+        "Profit_Per_Unit"
+    ],
+    "training_records": 8132,
+    "testing_records": 2062,
+    "test_MAE": 139.67068830546108,
+    "test_RMSE": 163.67542767818506,
+    "test_R2": 0.6194994066678567,
+    "model_file": "Nassau_Lead_Time_Model.joblib"
+}

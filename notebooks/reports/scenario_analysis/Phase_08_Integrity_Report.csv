@@ -1,0 +1,22 @@
+Check,Passed
+Original CSV exists,True
+Original CSV values unchanged,True
+Original row count preserved,True
+Original columns preserved,True
+Scenario comparison created and saved,True
+scenario_baseline_assignment.csv,True
+scenario_factory_options.csv,True
+scenario_region_performance.csv,True
+scenario_ship_mode_performance.csv,True
+scenario_historical_baseline.csv,True
+Nassau_Candy_Scenario_Comparison.csv,True
+scenario_support_summary.csv,True
+scenario_lead_time_estimate_status.csv,True
+scenario_distance_sensitivity.csv,True
+scenario_analysis_limitations.txt,True
+advanced_product_factory_scenario_matrix.csv,True
+advanced_factory_distance_comparison.csv,True
+advanced_hypothetical_scenario_report.csv,True
+Factory_Product_Compatibility_Template.csv,True
+Factory_Production_Time_Calendar_Template.csv,True
+model_factory_support_check.csv,True
