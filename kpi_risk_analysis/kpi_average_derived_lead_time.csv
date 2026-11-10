@@ -1,0 +1,2 @@
+KPI,Value,Unit,Scope,Valid_Record_Count,Status,Interpretation
+Average Derived Lead Time,1320.8418677653522,Days,Rows with both dates successfully parsed,10194,Historical date difference,Order Date-to-Ship Date difference only. The unusually long observed values mean this must not be described as verified transit duration.

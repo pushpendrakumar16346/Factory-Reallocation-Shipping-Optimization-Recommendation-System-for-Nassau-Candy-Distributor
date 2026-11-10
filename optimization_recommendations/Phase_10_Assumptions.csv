@@ -1,0 +1,12 @@
+Area,Method_or_Input,Assumption_or_Limitation
+Source data,Original Nassau Candy Distributor CSV,Original source is read-only; no source values are modified.
+Historical baseline,Order Date to Ship Date difference,Called derived lead-time days; not verified transit duration.
+Factory mapping,Phase 07 product-factory reference mapping,Not proof of actual historical factory dispatch.
+Alternative factories,Other factories listed in the reference mapping,All alternative options are unverified until compatibility evidence is supplied.
+Factory lead-time estimates,Not calculated,No validated factory-specific effect or historical factory assignment is available.
+Profitability,"Historical Sales, Gross Profit, Cost, and Units",Historical product profitability is not alternative-factory profitability.
+Additional costs,Blank user-editable hypothetical cost template,No actual alternative factory costs were provided.
+Scoring,Normalized product-level speed and profit priorities,Scores prioritize review; they do not prove feasibility or optimization.
+Weights,"Speed-first 80/20, balanced 50/50, profit-protection 20/80",Weights are transparent and can be changed.
+No-benefit test,Zero improvement assigned without evidence,Prevents unsupported scenario benefits from appearing.
+Distance and routing,Not used to estimate factory benefits,Reference coordinates or straight-line distance do not establish real routes or freight costs.

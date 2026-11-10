@@ -1,0 +1,4 @@
+Weight_Profile,Speed_Weight,Profit_Weight,Weights_Sum,Valid_Weights
+Speed-first,0.8,0.2,1.0,True
+Balanced,0.5,0.5,1.0,True
+Profit-protection,0.2,0.8,1.0,True

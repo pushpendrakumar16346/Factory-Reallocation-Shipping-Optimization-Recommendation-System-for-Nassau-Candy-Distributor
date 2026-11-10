@@ -1,0 +1,50 @@
+[
+    {
+        "file": "reports\\final_delivery\\delivery_inventory.json",
+        "size_kb": 1.14
+    },
+    {
+        "file": "reports\\final_delivery\\documentation\\application_user_manual.md",
+        "size_kb": 1.85
+    },
+    {
+        "file": "reports\\final_delivery\\executive_summary\\business_findings.md",
+        "size_kb": 0.91
+    },
+    {
+        "file": "reports\\final_delivery\\executive_summary\\executive_summary.md",
+        "size_kb": 3.45
+    },
+    {
+        "file": "reports\\final_delivery\\executive_summary\\management_action_plan.md",
+        "size_kb": 1.43
+    },
+    {
+        "file": "reports\\final_delivery\\executive_summary\\model_results_and_validation.md",
+        "size_kb": 0.92
+    },
+    {
+        "file": "reports\\final_delivery\\executive_summary\\risk_and_data_requirements.md",
+        "size_kb": 1.36
+    },
+    {
+        "file": "reports\\final_delivery\\executive_summary\\verified_project_findings.json",
+        "size_kb": 2.73
+    },
+    {
+        "file": "reports\\final_delivery\\package\\Nassau_Candy_Final_Handover.zip",
+        "size_kb": 19990.21
+    },
+    {
+        "file": "reports\\final_delivery\\presentation\\Nassau_Candy_Executive_Presentation.pptx",
+        "size_kb": 37.52
+    },
+    {
+        "file": "reports\\final_delivery\\validation\\fresh_environment_test.py",
+        "size_kb": 1.37
+    },
+    {
+        "file": "reports\\final_delivery\\validation\\project_validation_results.json",
+        "size_kb": 1.59
+    }
+]

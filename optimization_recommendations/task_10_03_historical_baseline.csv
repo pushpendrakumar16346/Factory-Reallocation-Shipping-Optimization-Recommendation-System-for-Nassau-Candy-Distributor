@@ -1,0 +1,16 @@
+Product Name,Order_Line_Count,Historical_Sales,Historical_Units,Historical_Gross_Profit,Historical_Cost,Derived_Lead_Time_Mean_Days,Derived_Lead_Time_Median_Days,Derived_Lead_Time_Min_Days,Derived_Lead_Time_Max_Days,Historical_Gross_Margin,Lead_Time_Measure_Label,Reference Factory
+Everlasting Gobstopper,3,130.0,13,104.0,26.0,1394.6666666666667,1273.0,1270,1641,0.8,Derived Order Date to Ship Date difference; not verified transit duration,Secret Factory
+Fizzy Lifting Drinks,6,78.75,21,47.25,31.5,1273.5,1274.0,907,1640,0.6,Derived Order Date to Ship Date difference; not verified transit duration,Sugar Shack
+Fun Dip,3,12.0,8,4.8,7.2,1272.6666666666667,1272.0,1271,1275,0.39999999999999997,Derived Order Date to Ship Date difference; not verified transit duration,Sugar Shack
+Hair Toffee,4,76.5,17,59.5,17.0,1455.25,1455.0,1272,1639,0.7777777777777778,Derived Order Date to Ship Date difference; not verified transit duration,The Other Factory
+Kazookles,96,1205.75,371,92.75,1113.0,1272.9895833333333,1273.0,904,1641,0.07692307692307693,Derived Order Date to Ship Date difference; not verified transit duration,The Other Factory
+Laffy Taffy,10,53.73,27,33.480000000000004,20.25,1383.1,1275.0,909,1642,0.6231155778894474,Derived Order Date to Ship Date difference; not verified transit duration,Sugar Shack
+Lickable Wallpaper,94,7860.0,393,3930.0,3930.0,1339.1382978723404,1274.0,904,1641,0.5,Derived Order Date to Ship Date difference; not verified transit duration,Secret Factory
+Nerds,4,15.0,10,7.0,8.0,1274.0,1274.0,908,1640,0.4666666666666667,Derived Order Date to Ship Date difference; not verified transit duration,Sugar Shack
+SweeTARTS,10,61.5,41,28.7,32.8,1383.5,1274.0,910,1641,0.4666666666666667,Derived Order Date to Ship Date difference; not verified transit duration,Sugar Shack
+Wonka Bar - Fudge Mallows,1818,24890.4,6914,16593.6,8296.8,1314.2420242024202,1274.0,904,1642,0.6666666666666665,Derived Order Date to Ship Date difference; not verified transit duration,Lot's O' Nuts
+Wonka Bar - Milk Chocolate,2137,26867.75,8267,17443.37,9424.38,1316.7646233036967,1274.0,904,1642,0.6492307692307692,Derived Order Date to Ship Date difference; not verified transit duration,Wicked Choccy's
+Wonka Bar - Nutty Crunch Surprise,1810,23574.95,6755,16819.95,6755.0,1328.9154696132596,1274.0,904,1642,0.7134670487106017,Derived Order Date to Ship Date difference; not verified transit duration,Lot's O' Nuts
+Wonka Bar - Triple Dazzle Caramel,2015,28485.0,7596,18610.2,9874.8,1325.6610421836228,1274.0,904,1642,0.6533333333333333,Derived Order Date to Ship Date difference; not verified transit duration,Wicked Choccy's
+Wonka Bar -Scrumdiddlyumptious,2064,27874.8,7743,19357.5,8517.3,1320.6419573643411,1274.0,904,1642,0.6944444444444444,Derived Order Date to Ship Date difference; not verified transit duration,Lot's O' Nuts
+Wonka Gum,120,597.5,478,310.7,286.8,1306.525,1273.5,904,1642,0.52,Derived Order Date to Ship Date difference; not verified transit duration,Secret Factory

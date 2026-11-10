@@ -1,0 +1,76 @@
+Product Name,Reference Factory,Factory Option,Is_Reference_Mapping,Option_Type,Compatibility_Status,Factory_Specific_Lead_Time_Estimable,Factory_Specific_Cost_Available,Capacity_Data_Available
+Everlasting Gobstopper,Secret Factory,Lot's O' Nuts,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Everlasting Gobstopper,Secret Factory,Secret Factory,True,Reference mapping only - not verified historical dispatch,Reference mapping; actual dispatch not verified,False,False,False
+Everlasting Gobstopper,Secret Factory,Sugar Shack,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Everlasting Gobstopper,Secret Factory,The Other Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Everlasting Gobstopper,Secret Factory,Wicked Choccy's,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Fizzy Lifting Drinks,Sugar Shack,Lot's O' Nuts,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Fizzy Lifting Drinks,Sugar Shack,Secret Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Fizzy Lifting Drinks,Sugar Shack,Sugar Shack,True,Reference mapping only - not verified historical dispatch,Reference mapping; actual dispatch not verified,False,False,False
+Fizzy Lifting Drinks,Sugar Shack,The Other Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Fizzy Lifting Drinks,Sugar Shack,Wicked Choccy's,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Fun Dip,Sugar Shack,Lot's O' Nuts,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Fun Dip,Sugar Shack,Secret Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Fun Dip,Sugar Shack,Sugar Shack,True,Reference mapping only - not verified historical dispatch,Reference mapping; actual dispatch not verified,False,False,False
+Fun Dip,Sugar Shack,The Other Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Fun Dip,Sugar Shack,Wicked Choccy's,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Hair Toffee,The Other Factory,Lot's O' Nuts,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Hair Toffee,The Other Factory,Secret Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Hair Toffee,The Other Factory,Sugar Shack,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Hair Toffee,The Other Factory,The Other Factory,True,Reference mapping only - not verified historical dispatch,Reference mapping; actual dispatch not verified,False,False,False
+Hair Toffee,The Other Factory,Wicked Choccy's,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Kazookles,The Other Factory,Lot's O' Nuts,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Kazookles,The Other Factory,Secret Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Kazookles,The Other Factory,Sugar Shack,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Kazookles,The Other Factory,The Other Factory,True,Reference mapping only - not verified historical dispatch,Reference mapping; actual dispatch not verified,False,False,False
+Kazookles,The Other Factory,Wicked Choccy's,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Laffy Taffy,Sugar Shack,Lot's O' Nuts,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Laffy Taffy,Sugar Shack,Secret Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Laffy Taffy,Sugar Shack,Sugar Shack,True,Reference mapping only - not verified historical dispatch,Reference mapping; actual dispatch not verified,False,False,False
+Laffy Taffy,Sugar Shack,The Other Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Laffy Taffy,Sugar Shack,Wicked Choccy's,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Lickable Wallpaper,Secret Factory,Lot's O' Nuts,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Lickable Wallpaper,Secret Factory,Secret Factory,True,Reference mapping only - not verified historical dispatch,Reference mapping; actual dispatch not verified,False,False,False
+Lickable Wallpaper,Secret Factory,Sugar Shack,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Lickable Wallpaper,Secret Factory,The Other Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Lickable Wallpaper,Secret Factory,Wicked Choccy's,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Nerds,Sugar Shack,Lot's O' Nuts,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Nerds,Sugar Shack,Secret Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Nerds,Sugar Shack,Sugar Shack,True,Reference mapping only - not verified historical dispatch,Reference mapping; actual dispatch not verified,False,False,False
+Nerds,Sugar Shack,The Other Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Nerds,Sugar Shack,Wicked Choccy's,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+SweeTARTS,Sugar Shack,Lot's O' Nuts,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+SweeTARTS,Sugar Shack,Secret Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+SweeTARTS,Sugar Shack,Sugar Shack,True,Reference mapping only - not verified historical dispatch,Reference mapping; actual dispatch not verified,False,False,False
+SweeTARTS,Sugar Shack,The Other Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+SweeTARTS,Sugar Shack,Wicked Choccy's,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar - Fudge Mallows,Lot's O' Nuts,Lot's O' Nuts,True,Reference mapping only - not verified historical dispatch,Reference mapping; actual dispatch not verified,False,False,False
+Wonka Bar - Fudge Mallows,Lot's O' Nuts,Secret Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar - Fudge Mallows,Lot's O' Nuts,Sugar Shack,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar - Fudge Mallows,Lot's O' Nuts,The Other Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar - Fudge Mallows,Lot's O' Nuts,Wicked Choccy's,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar - Milk Chocolate,Wicked Choccy's,Lot's O' Nuts,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar - Milk Chocolate,Wicked Choccy's,Secret Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar - Milk Chocolate,Wicked Choccy's,Sugar Shack,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar - Milk Chocolate,Wicked Choccy's,The Other Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar - Milk Chocolate,Wicked Choccy's,Wicked Choccy's,True,Reference mapping only - not verified historical dispatch,Reference mapping; actual dispatch not verified,False,False,False
+Wonka Bar - Nutty Crunch Surprise,Lot's O' Nuts,Lot's O' Nuts,True,Reference mapping only - not verified historical dispatch,Reference mapping; actual dispatch not verified,False,False,False
+Wonka Bar - Nutty Crunch Surprise,Lot's O' Nuts,Secret Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar - Nutty Crunch Surprise,Lot's O' Nuts,Sugar Shack,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar - Nutty Crunch Surprise,Lot's O' Nuts,The Other Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar - Nutty Crunch Surprise,Lot's O' Nuts,Wicked Choccy's,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar - Triple Dazzle Caramel,Wicked Choccy's,Lot's O' Nuts,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar - Triple Dazzle Caramel,Wicked Choccy's,Secret Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar - Triple Dazzle Caramel,Wicked Choccy's,Sugar Shack,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar - Triple Dazzle Caramel,Wicked Choccy's,The Other Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar - Triple Dazzle Caramel,Wicked Choccy's,Wicked Choccy's,True,Reference mapping only - not verified historical dispatch,Reference mapping; actual dispatch not verified,False,False,False
+Wonka Bar -Scrumdiddlyumptious,Lot's O' Nuts,Lot's O' Nuts,True,Reference mapping only - not verified historical dispatch,Reference mapping; actual dispatch not verified,False,False,False
+Wonka Bar -Scrumdiddlyumptious,Lot's O' Nuts,Secret Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar -Scrumdiddlyumptious,Lot's O' Nuts,Sugar Shack,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar -Scrumdiddlyumptious,Lot's O' Nuts,The Other Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Bar -Scrumdiddlyumptious,Lot's O' Nuts,Wicked Choccy's,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Gum,Secret Factory,Lot's O' Nuts,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Gum,Secret Factory,Secret Factory,True,Reference mapping only - not verified historical dispatch,Reference mapping; actual dispatch not verified,False,False,False
+Wonka Gum,Secret Factory,Sugar Shack,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Gum,Secret Factory,The Other Factory,False,Alternative factory - unverified,UNVERIFIED,False,False,False
+Wonka Gum,Secret Factory,Wicked Choccy's,False,Alternative factory - unverified,UNVERIFIED,False,False,False

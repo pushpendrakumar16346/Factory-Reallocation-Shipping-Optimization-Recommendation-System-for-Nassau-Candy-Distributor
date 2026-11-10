@@ -1,0 +1,2 @@
+KPI,Value,Unit,Scope,Valid_Record_Count,Status,Interpretation
+Median Derived Lead Time,1274.0,Days,Rows with both dates successfully parsed,10194,Historical date difference,Median of the derived date differences; not a verified factory or transport transit-time measure.

@@ -1,0 +1,10 @@
+Metric,Value,Unit,Scope,Status,Interpretation
+Total Sales,141783.63,Source currency units,All source order lines,Calculated,Historical sum of Sales.
+Total Gross Profit,93442.8,Source currency units,All source order lines,Calculated,Historical sum of the Gross Profit source field.
+Overall Gross Profit Margin,65.90521063679918,%,Total Gross Profit / Total Sales,Calculated,Weighted overall gross margin.
+Average Derived Lead Time,1320.8418677653522,Days,Valid parsed date pairs,Historical derived measure,Not verified transit duration.
+Median Derived Lead Time,1274.0,Days,Valid parsed date pairs,Historical derived measure,Not verified transit duration.
+Derived Lead-Time Standard Deviation,262.44489175775294,Days,Valid parsed date pairs,Historical descriptive measure,Sample standard deviation; ddof=1.
+Derived Lead-Time IQR,367.0,Days,Valid parsed date pairs,Historical descriptive measure,75th percentile minus 25th percentile.
+Estimated Lead-Time Reduction,,Days,Alternative factory scenarios,Not estimable,No validated factory-specific lead-time effect is available.
+Supported Alternative Option Coverage,0.0,%,Phase 10 alternative factory options,"Evidence coverage, not confidence",Share of alternatives passing compatibility and lead-time evidence gates.

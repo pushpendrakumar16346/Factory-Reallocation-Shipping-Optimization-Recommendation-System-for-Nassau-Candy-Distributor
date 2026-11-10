@@ -1,0 +1,13 @@
+Check,Passed,Detail
+All source products accounted for,True,Eligibility table includes every distinct source product.
+No duplicate product-reference mappings,True,Each product has at most one reference mapping.
+Weights sum to one,True,All defined weight profiles sum to 1.
+Scores are within zero and one,True,Normalized screening scores should remain between 0 and 1.
+Alternative options remain unverified,True,No alternative is labelled as feasible or verified.
+Alternative factory lead-time estimates remain unavailable,True,No unsupported factory-specific lead-time estimates are populated.
+No-benefit test passes,True,No artificial lead-time or profit benefit is assigned.
+Top 3 count is correct,True,Top 3 output has the expected number of products.
+Top 5 count is correct,True,Top 5 output has the expected number of products.
+Top 10 count is correct,True,Top 10 output has the expected number of products.
+All alternative options included in warnings,True,Every alternative option is present in the unsupported-scenario register.
+Ranking is deterministic,True,"Ranking uses stable, explicit sort keys."

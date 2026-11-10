@@ -1,0 +1,76 @@
+{
+    "project": "Nassau Candy Distributor Analytics Project",
+    "dataset": {
+        "original_rows": 10194,
+        "original_columns": 18,
+        "processed_rows": 10194,
+        "processed_columns": 34
+    },
+    "financial_performance": {
+        "total_sales": 141783.63,
+        "total_cost": 48340.83,
+        "gross_profit": 93442.8,
+        "weighted_gross_profit_margin_percent": 65.9052
+    },
+    "product_performance": {
+        "top_product": "Wonka Bar - Triple Dazzle Caramel",
+        "top_product_sales": 28485.0
+    },
+    "regional_performance": {
+        "highest_sales_region": "Pacific",
+        "pacific_sales": 46301.53,
+        "pacific_gross_profit": 30485.94,
+        "pacific_records": 3253,
+        "lowest_sales_region": "Gulf",
+        "gulf_sales": 22247.26
+    },
+    "shipping_performance": {
+        "largest_shipping_category": "Standard Class",
+        "standard_class_records": 6120,
+        "standard_class_unique_orders": 5142,
+        "standard_class_sales": 85490.35,
+        "standard_class_gross_profit": 56424.46
+    },
+    "lead_time": {
+        "mean_days": 1320.84,
+        "median_days": 1274,
+        "minimum_days": 904,
+        "maximum_days": 1642,
+        "definition": "Ship Date minus Order Date",
+        "interpretation_warning": "Date-derived measure; not independently verified carrier transit time."
+    },
+    "model": {
+        "selected_algorithm": "Tuned Random Forest Regressor",
+        "saved_metadata_test_records": 2062,
+        "saved_metadata_mae": 95.9795,
+        "saved_metadata_rmse": 120.7382,
+        "saved_metadata_r_squared": 0.7929,
+        "comparison_output_mae": 139.6707,
+        "comparison_output_rmse": 163.6754,
+        "comparison_output_r_squared": 0.6195,
+        "metric_reconciliation_required": true,
+        "mse_separately_reported": false
+    },
+    "application": {
+        "framework": "Streamlit",
+        "pages": [
+            "Home",
+            "Product Performance",
+            "Region Analysis",
+            "Ship Mode Analysis",
+            "Factory Explorer",
+            "Scenario Simulator",
+            "Recommendations",
+            "Risk and Impact"
+        ]
+    },
+    "interpretation_limitations": [
+        "Lead time is derived from order and ship dates.",
+        "Factory mappings are reference mappings, not verified dispatch records.",
+        "Haversine distances are straight-line distances, not road or freight routes.",
+        "Factory-specific savings have not been established.",
+        "Scenario support does not represent probability of success.",
+        "Recommendations are indicative, not proven optimal.",
+        "Model metric discrepancies require explicit disclosure."
+    ]
+}

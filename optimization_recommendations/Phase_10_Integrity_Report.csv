@@ -1,0 +1,15 @@
+Integrity_Check,Passed,Status
+Original CSV exists,True,PASS
+Original row count preserved in analysis copy,True,PASS
+Original columns retained,True,PASS
+Original column order retained,True,PASS
+Original CSV hash unchanged,True,PASS
+Original source rows represented in baseline,True,PASS
+All source products appear in eligibility table,True,PASS
+No alternative options labelled verified,True,PASS
+Alternative factory lead-time estimates not invented,True,PASS
+No-benefit test passed,True,PASS
+Ranking QA passed,True,PASS
+Excel workbook exists,True,PASS
+Hypothetical cost template exists,True,PASS
+All expected output files exist,True,PASS

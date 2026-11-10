@@ -1,0 +1,10 @@
+Limitation,Explanation
+Historical date differences,The derived differences are unusually long and require semantic validation.
+Actual factory assignment,The dataset does not provide validated historical factory dispatch.
+Factory compatibility,Alternative product-factory compatibility is not verified.
+Factory capacity,"Capacity, utilization, inventory, backlog, and throughput are unavailable."
+Factory lead time,Alternative factory lead-time effects are not estimable.
+Factory profitability,Alternative factory manufacturing and freight costs are unavailable.
+Hypothetical costs,"User-entered incremental costs are assumptions, not actual cost records."
+Recommendation scores,"Scores are product-level review priorities, not factory-specific benefit estimates."
+Causality,The analysis does not establish that reassignment causes shorter lead times or higher profit.

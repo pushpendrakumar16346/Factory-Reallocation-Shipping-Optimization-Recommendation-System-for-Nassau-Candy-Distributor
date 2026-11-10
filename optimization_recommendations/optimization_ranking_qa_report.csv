@@ -1,0 +1,9 @@
+Check,Passed,Details
+All ranking scores are between 0 and 100,True,Scores use relative percentile scaling.
+Unsupported products excluded from ranked recommendations,False,Unsupported products in scoring table: 0
+Top-N rank limit respected,True,Configured Top-N value: 10
+Tie handling is consistent,True,Equal input values receive equal percentile scores.
+No-benefit case does not create artificial ranking differences,True,Unique scores for identical inputs: 1
+Priority profiles respond to different weights,True,At least one product has different scores across priority profiles.
+Recommendations have traceable rationale and type,True,Each ranked row includes a rationale and recommendation type.
+No unsupported alternative-factory claim,True,Factory mapping is treated as reference data only.

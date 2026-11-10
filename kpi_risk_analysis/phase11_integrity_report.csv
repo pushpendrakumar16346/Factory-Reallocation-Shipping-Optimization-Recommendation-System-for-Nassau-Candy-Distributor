@@ -1,0 +1,10 @@
+Check,Passed,Detail
+Original source SHA-256 unchanged,True,Before=6ae9208e77ce410e90073b19813d29f89853ce9f3cce43d41f9643781696e94f; After=6ae9208e77ce410e90073b19813d29f89853ce9f3cce43d41f9643781696e94f
+Original source row count preserved in memory,True,Rows read=10194
+Original source columns preserved in memory,True,Columns read=18
+Original source date strings retained,True,Date parsing was performed only in separate derived columns.
+Lead-time reduction not fabricated,True,Not estimable: no validated factory-specific lead-time evidence
+Scenario support score is evidence-based,True,Score is the percentage of alternatives passing documented evidence gates.
+All expected output files exist,True,Expected CSV files=18
+Risk register created,True,Risk records=16
+Dashboard KPI output created,True,Dashboard metrics=9

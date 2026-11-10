@@ -1,0 +1,8 @@
+Coverage_Metric,Count,Interpretation,Coverage_Percent
+Source products,15,Products present in the original CSV,100.0
+Products with reference mapping,15,Products with a Phase 07 reference mapping,100.0
+Unmapped products,0,Products requiring mapping review,0.0
+Original source rows represented,10194,Original CSV rows; no row removal,100.0
+Generated alternative options,60,Other reference factories paired for screening,400.0
+Supported alternative options,0,No alternative compatibility evidence was supplied,0.0
+Unsupported alternative options,60,Alternatives lacking compatibility evidence,400.0

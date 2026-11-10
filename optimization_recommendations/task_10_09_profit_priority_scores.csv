@@ -1,0 +1,16 @@
+Product Name,Historical_Gross_Margin,Profit_Priority_Score,Score_Direction
+Everlasting Gobstopper,0.8,0.0,Higher means greater review priority due to lower historical gross margin
+Fizzy Lifting Drinks,0.6,0.27659574468085124,Higher means greater review priority due to lower historical gross margin
+Fun Dip,0.39999999999999997,0.5531914893617023,Higher means greater review priority due to lower historical gross margin
+Hair Toffee,0.7777777777777778,0.030732860520094718,Higher means greater review priority due to lower historical gross margin
+Kazookles,0.07692307692307693,1.0,Higher means greater review priority due to lower historical gross margin
+Laffy Taffy,0.6231155778894474,0.24462739228055164,Higher means greater review priority due to lower historical gross margin
+Lickable Wallpaper,0.5,0.4148936170212767,Higher means greater review priority due to lower historical gross margin
+Nerds,0.4666666666666667,0.46099290780141855,Higher means greater review priority due to lower historical gross margin
+SweeTARTS,0.4666666666666667,0.46099290780141855,Higher means greater review priority due to lower historical gross margin
+Wonka Bar - Fudge Mallows,0.6666666666666665,0.18439716312056764,Higher means greater review priority due to lower historical gross margin
+Wonka Bar - Milk Chocolate,0.6492307692307692,0.20851063829787264,Higher means greater review priority due to lower historical gross margin
+Wonka Bar - Nutty Crunch Surprise,0.7134670487106017,0.11967323050661482,Higher means greater review priority due to lower historical gross margin
+Wonka Bar - Triple Dazzle Caramel,0.6533333333333333,0.20283687943262418,Higher means greater review priority due to lower historical gross margin
+Wonka Bar -Scrumdiddlyumptious,0.6944444444444444,0.14598108747044924,Higher means greater review priority due to lower historical gross margin
+Wonka Gum,0.52,0.3872340425531916,Higher means greater review priority due to lower historical gross margin

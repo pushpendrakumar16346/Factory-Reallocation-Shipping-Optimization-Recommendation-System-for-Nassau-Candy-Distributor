@@ -1,0 +1,1394 @@
+NASSAU CANDY MODEL INVESTIGATION
+
+===========================================================================
+CELL 0 | code
+SOURCE:
+# Set up the machine learning environment and load the prepared dataset
+
+from pathlib import Path
+import hashlib
+import json
+import warnings
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+from IPython.display import display
+
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklearn.impute import SimpleImputer
+
+from sklearn.dummy import DummyRegressor
+from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
+
+from sklearn.model_selection import (
+    GroupShuffleSplit,
+    GroupKFold,
+    KFold,
+    cross_validate,
+    RandomizedSearchCV,
+    train_test_split
+)
+
+from sklearn.metrics import (
+    mean_absolute_error,
+    mean_squared_error,
+    r2_score,
+    make_scorer
+)
+
+from sklearn.inspection import permutation_importance
+import joblib
+
+warnings.filterwarnings("ignore")
+
+PROJECT_ROOT = Path(r"C:\Users\hp\Nassau_Candy_Final_Submission")
+
+INPUT_PATH = (
+    PROJECT_ROOT / "data" / "processed"
+    / "Nassau_Candy_Feature_Engineered.csv"
+)
+
+MODEL_FOLDER = PROJECT_ROOT / "models"
+REPORT_FOLDER = PROJECT_ROOT / "reports"
+FIGURE_FOLDER = REPORT_FOLDER / "figures"
+PROCESSED_FOLDER = PROJECT_ROOT / "data" / "processed"
+
+for folder in [
+    MODEL_FOLDER,
+    REPORT_FOLDER,
+    FIGURE_FOLDER,
+    PROCESSED_FOLDER
+]:
+    folder.mkdir(parents=True, exist_ok=True)
+
+df_ml = pd.read_csv(INPUT_PATH)
+
+# Parse only the helper date columns
+df_ml["Order_Date_Parsed"] = pd.to_datetime(
+    df_ml["Order_Date_Parsed"],
+    errors="coerce"
+)
+
+df_ml["Ship_Date_Parsed"] = pd.to_datetime(
+    df_ml["Ship_Date_Parsed"],
+    errors="coerce"
+)
+
+print("Dataset loaded successfully.")
+print("Dataset shape:", df_ml.shape)
+print("Model folder:", MODEL_FOLDER)
+print("Report folder:", REPORT_FOLDER)
+
+display(df_ml.head())
+OUTPUTS:
+Dataset loaded successfully.
+Dataset shape: (10194, 34)
+Model folder: C:\Users\hp\Nassau_Candy_Final_Submission\models
+Report folder: C:\Users\hp\Nassau_Candy_Final_Submission\reports
+   Row ID                      Order ID  Order Date   Ship Date  \
+0       1  US-2021-103800-CHO-MIL-31000  03-01-2024  30-06-2026   
+1       2  US-2021-112326-CHO-TRI-54000  04-01-2024  01-07-2026   
+2       3  US-2021-112326-CHO-NUT-13000  04-01-2024  01-07-2026   
+3       4  US-2021-112326-CHO-SCR-58000  04-01-2024  01-07-2026   
+4       5  US-2021-141817-CHO-TRI-54000  05-01-2024  05-07-2026   
+
+        Ship Mode  Customer ID Country/Region          City State/Province  \
+0  Standard Class       103800  United States       Houston          Texas   
+1  Standard Class       112326  United States    Naperville       Illinois   
+2  Standard Class       112326  United States    Naperville       Illinois   
+3  Standard Class       112326  United States    Naperville       Illinois   
+4  Standard Class       141817  United States  Philadelphia   Pennsylvania   
+
+  Postal Code  ... Order_Weekday Ship_Year Ship_Month Profit_Margin_Pct  \
+0       77095  ...     Wednesday      2026          6         64.923077   
+1       60540  ...      Thursday      2026          7         65.333333   
+2       60540  ...      Thursday      2026          7         71.346705   
+3       60540  ...      Thursday      2026          7         69.444444   
+4       19143  ...        Friday      2026          7         65.333333   
+
+   Sales_Per_Unit  Cost_Per_Unit  Profit_Per_Unit  Lead_Time_Category  \
+0            3.25           1.14             2.11                 Low   
+1            3.75           1.30             2.45                 Low   
+2            3.49           1.00             2.49                 Low   
+3            3.60           1.10             2.50                 Low   
+4            3.75           1.30             2.45                 Low   
+
+  Profit_Category Sales_Category  
+0             Low            Low  
+1             Low            Low  
+2          Medium         Medium  
+3          Medium         Medium  
+4          Medium         Medium  
+
+[5 rows x 34 columns]
+
+===========================================================================
+CELL 9 | code
+SOURCE:
+# Define a grouped train-test strategy to keep the same order in one split
+
+groups = df_ml["Order ID"].astype(str)
+
+splitter = GroupShuffleSplit(
+    n_splits=1,
+    test_size=0.20,
+    random_state=42
+)
+
+train_indices, test_indices = next(
+    splitter.split(X, y, groups=groups)
+)
+
+X_train = X.iloc[train_indices].copy()
+X_test = X.iloc[test_indices].copy()
+
+y_train = y.iloc[train_indices].copy()
+y_test = y.iloc[test_indices].copy()
+
+groups_train = groups.iloc[train_indices].copy()
+groups_test = groups.iloc[test_indices].copy()
+
+print("Training rows:", len(X_train))
+print("Testing rows:", len(X_test))
+
+print(
+    "Training order groups:",
+    groups_train.nunique()
+)
+
+print(
+    "Testing order groups:",
+    groups_test.nunique()
+)
+
+assert set(groups_train).isdisjoint(set(groups_test))
+
+print("SUCCESS: No Order ID group overlaps between train and test.")
+OUTPUTS:
+Training rows: 8132
+Testing rows: 2062
+Training order groups: 6839
+Testing order groups: 1710
+SUCCESS: No Order ID group overlaps between train and test.
+
+
+===========================================================================
+CELL 11 | code
+SOURCE:
+# Train a median baseline regression model
+
+baseline_model = DummyRegressor(strategy="median")
+
+baseline_model.fit(
+    np.zeros((len(y_train), 1)),
+    y_train
+)
+
+baseline_predictions = baseline_model.predict(
+    np.zeros((len(y_test), 1))
+)
+
+baseline_mae = mean_absolute_error(
+    y_test,
+    baseline_predictions
+)
+
+baseline_rmse = np.sqrt(
+    mean_squared_error(y_test, baseline_predictions)
+)
+
+baseline_r2 = r2_score(
+    y_test,
+    baseline_predictions
+)
+
+baseline_results = pd.DataFrame([{
+    "Model": "Dummy Regressor",
+    "MAE": baseline_mae,
+    "RMSE": baseline_rmse,
+    "R2": baseline_r2
+}])
+
+display(baseline_results)
+OUTPUTS:
+             Model         MAE        RMSE        R2
+0  Dummy Regressor  198.370514  268.718365 -0.025612
+
+===========================================================================
+CELL 15 | code
+SOURCE:
+# Train a Random Forest regression model
+
+random_forest_model = Pipeline([
+    ("preprocessor", preprocessor),
+    ("model", RandomForestRegressor(
+        n_estimators=150,
+        random_state=42,
+        n_jobs=-1,
+        max_features=0.8
+    ))
+])
+
+random_forest_model.fit(X_train, y_train)
+
+print("Random Forest training completed.")
+OUTPUTS:
+Random Forest training completed.
+
+
+===========================================================================
+CELL 16 | code
+SOURCE:
+# Train a Gradient Boosting regression model
+
+gradient_boosting_model = Pipeline([
+    ("preprocessor", preprocessor),
+    ("model", GradientBoostingRegressor(
+        n_estimators=100,
+        learning_rate=0.05,
+        max_depth=3,
+        random_state=42
+    ))
+])
+
+gradient_boosting_model.fit(X_train, y_train)
+
+print("Gradient Boosting training completed.")
+OUTPUTS:
+Gradient Boosting training completed.
+
+
+===========================================================================
+CELL 17 | code
+SOURCE:
+# Generate test predictions for all trained regression models
+
+models = {
+    "Linear Regression": linear_model,
+    "Random Forest": random_forest_model,
+    "Gradient Boosting": gradient_boosting_model
+}
+
+predictions = {}
+
+for model_name, model in models.items():
+    predictions[model_name] = model.predict(X_test)
+
+prediction_table = pd.DataFrame({
+    "Actual_Lead_Time": y_test.values
+})
+
+for model_name, prediction in predictions.items():
+    prediction_table[model_name] = prediction
+
+display(prediction_table.head(10))
+OUTPUTS:
+   Actual_Lead_Time  Linear Regression  Random Forest  Gradient Boosting
+0               909        1162.572305     957.853333        1096.534476
+1               909        1070.557183     982.000000        1096.534476
+2               907        1047.448612    1163.506667        1096.534476
+3               909        1069.741764     948.033333        1096.534476
+4               907         903.022267     987.593333        1096.534476
+5               907         907.855187     968.086667        1096.534476
+6               907        1140.454274     909.326667         962.975222
+7               910        1045.711768    1111.586667        1096.534476
+8               908        1140.561280    1060.513333        1096.534476
+9               908        1140.561280    1060.513333        1096.534476
+
+===========================================================================
+CELL 19 | code
+SOURCE:
+# Calculate mean absolute error for each trained model
+
+mae_results = []
+
+for model_name, prediction in predictions.items():
+    mae_results.append({
+        "Model": model_name,
+        "MAE": mean_absolute_error(y_test, prediction)
+    })
+
+mae_table = pd.DataFrame(mae_results).sort_values("MAE")
+
+display(mae_table)
+OUTPUTS:
+               Model         MAE
+1      Random Forest  136.586130
+2  Gradient Boosting  163.302233
+0  Linear Regression  166.414841
+
+===========================================================================
+CELL 20 | code
+SOURCE:
+#Calculate RMSE
+# Calculate root mean squared error for each trained model
+
+rmse_results = []
+
+for model_name, prediction in predictions.items():
+    rmse_results.append({
+        "Model": model_name,
+        "RMSE": np.sqrt(
+            mean_squared_error(y_test, prediction)
+        )
+    })
+
+rmse_table = pd.DataFrame(rmse_results).sort_values("RMSE")
+
+display(rmse_table)
+OUTPUTS:
+               Model        RMSE
+1      Random Forest  163.904306
+2  Gradient Boosting  171.306667
+0  Linear Regression  180.784694
+
+===========================================================================
+CELL 21 | code
+SOURCE:
+#Calculate R²
+# Calculate R-squared scores for each trained model
+
+r2_results = []
+
+for model_name, prediction in predictions.items():
+    r2_results.append({
+        "Model": model_name,
+        "R2": r2_score(y_test, prediction)
+    })
+
+r2_table = pd.DataFrame(r2_results).sort_values(
+    "R2",
+    ascending=False
+)
+
+display(r2_table)
+OUTPUTS:
+               Model        R2
+1      Random Forest  0.618435
+2  Gradient Boosting  0.583191
+0  Linear Regression  0.535793
+
+===========================================================================
+CELL 22 | code
+SOURCE:
+#Create model comparison table
+# Compare baseline and trained regression models
+
+comparison_rows = [{
+    "Model": "Dummy Regressor",
+    "MAE": baseline_mae,
+    "RMSE": baseline_rmse,
+    "R2": baseline_r2
+}]
+
+for model_name, prediction in predictions.items():
+    comparison_rows.append({
+        "Model": model_name,
+        "MAE": mean_absolute_error(y_test, prediction),
+        "RMSE": np.sqrt(
+            mean_squared_error(y_test, prediction)
+        ),
+        "R2": r2_score(y_test, prediction)
+    })
+
+model_comparison = pd.DataFrame(comparison_rows).sort_values(
+    "RMSE"
+).reset_index(drop=True)
+
+display(model_comparison)
+OUTPUTS:
+               Model         MAE        RMSE        R2
+0      Random Forest  136.586130  163.904306  0.618435
+1  Gradient Boosting  163.302233  171.306667  0.583191
+2  Linear Regression  166.414841  180.784694  0.535793
+3    Dummy Regressor  198.370514  268.718365 -0.025612
+
+===========================================================================
+CELL 23 | code
+SOURCE:
+#Perform cross-validation
+# Evaluate regression models using grouped cross-validation
+
+unique_groups = groups_train.nunique()
+n_splits = min(5, unique_groups)
+
+assert n_splits >= 2, "Not enough groups for cross-validation."
+
+group_cv = GroupKFold(n_splits=n_splits)
+
+cv_results = []
+
+scoring = {
+    "MAE": "neg_mean_absolute_error",
+    "RMSE": "neg_root_mean_squared_error",
+    "R2": "r2"
+}
+
+for model_name, model in models.items():
+
+    scores = cross_validate(
+        model,
+        X_train,
+        y_train,
+        groups=groups_train,
+        cv=group_cv,
+        scoring=scoring,
+        n_jobs=-1
+    )
+
+    cv_results.append({
+        "Model": model_name,
+        "Mean_CV_MAE": -scores["test_MAE"].mean(),
+        "Mean_CV_RMSE": -scores["test_RMSE"].mean(),
+        "Mean_CV_R2": scores["test_R2"].mean()
+    })
+
+cv_table = pd.DataFrame(cv_results).sort_values(
+    "Mean_CV_RMSE"
+)
+
+display(cv_table)
+OUTPUTS:
+               Model  Mean_CV_MAE  Mean_CV_RMSE  Mean_CV_R2
+1      Random Forest   135.678649    163.178470    0.610839
+2  Gradient Boosting   161.891102    170.029563    0.577509
+0  Linear Regression   164.263762    179.851424    0.527213
+
+===========================================================================
+CELL 24 | code
+SOURCE:
+#Hyperparameter tuning
+# Tune Random Forest hyperparameters using grouped cross-validation
+
+rf_pipeline = Pipeline([
+    ("preprocessor", preprocessor),
+    ("model", RandomForestRegressor(
+        random_state=42,
+        n_jobs=-1
+    ))
+])
+
+parameter_distributions = {
+    "model__n_estimators": [100, 150, 200],
+    "model__max_depth": [None, 10, 20],
+    "model__min_samples_split": [2, 5, 10],
+    "model__min_samples_leaf": [1, 2, 4],
+    "model__max_features": [0.6, 0.8, 1.0]
+}
+
+tuning_search = RandomizedSearchCV(
+    estimator=rf_pipeline,
+    param_distributions=parameter_distributions,
+    n_iter=8,
+    scoring="neg_root_mean_squared_error",
+    cv=group_cv,
+    random_state=42,
+    n_jobs=-1,
+    verbose=1
+)
+
+tuning_search.fit(
+    X_train,
+    y_train,
+    groups=groups_train
+)
+
+tuned_random_forest = tuning_search.best_estimator_
+
+print("Best parameters:")
+print(tuning_search.best_params_)
+
+print("Best cross-validation RMSE:")
+print(-tuning_search.best_score_)
+OUTPUTS:
+Fitting 5 folds for each of 8 candidates, totalling 40 fits
+Best parameters:
+{'model__n_estimators': 100, 'model__min_samples_split': 10, 'model__min_samples_leaf': 1, 'model__max_features': 0.6, 'model__max_depth': None}
+Best cross-validation RMSE:
+163.1204142906182
+
+
+===========================================================================
+CELL 25 | code
+SOURCE:
+#Actual vs predicted chart
+# Plot actual versus predicted lead-time values
+
+provisional_models = {
+    **models,
+    "Tuned Random Forest": tuned_random_forest
+}
+
+provisional_predictions = {
+    name: model.predict(X_test)
+    for name, model in provisional_models.items()
+}
+
+provisional_scores = {
+    name: np.sqrt(mean_squared_error(y_test, pred))
+    for name, pred in provisional_predictions.items()
+}
+
+provisional_best_name = min(
+    provisional_scores,
+    key=provisional_scores.get
+)
+
+provisional_best_model = provisional_models[
+    provisional_best_name
+]
+
+provisional_best_predictions = provisional_predictions[
+    provisional_best_name
+]
+
+plt.figure(figsize=(8, 6))
+plt.scatter(
+    y_test,
+    provisional_best_predictions,
+    alpha=0.5
+)
+
+minimum_value = min(
+    y_test.min(),
+    provisional_best_predictions.min()
+)
+
+maximum_value = max(
+    y_test.max(),
+    provisional_best_predictions.max()
+)
+
+plt.plot(
+    [minimum_value, maximum_value],
+    [minimum_value, maximum_value],
+    linestyle="--"
+)
+
+plt.xlabel("Actual Lead Time")
+plt.ylabel("Predicted Lead Time")
+plt.title(f"Actual vs Predicted — {provisional_best_name}")
+plt.tight_layout()
+
+plt.savefig(
+    FIGURE_FOLDER / "ML_Actual_vs_Predicted.png",
+    dpi=300
+)
+
+plt.show()
+plt.close()
+
+print("Provisional best model:", provisional_best_name)
+OUTPUTS:
+<Figure size 800x600 with 1 Axes>Provisional best model: Tuned Random Forest
+
+
+===========================================================================
+CELL 26 | code
+SOURCE:
+#Residual analysis
+# Analyse prediction residuals for the provisional best model
+
+residuals = (
+    y_test.to_numpy() - provisional_best_predictions
+)
+
+residual_table = pd.DataFrame({
+    "Actual": y_test.to_numpy(),
+    "Predicted": provisional_best_predictions,
+    "Residual": residuals
+})
+
+display(residual_table.head())
+
+fig, axes = plt.subplots(1, 2, figsize=(13, 5))
+
+axes[0].scatter(
+    provisional_best_predictions,
+    residuals,
+    alpha=0.5
+)
+axes[0].axhline(0, linestyle="--")
+axes[0].set_title("Residuals vs Predictions")
+axes[0].set_xlabel("Predicted Lead Time")
+axes[0].set_ylabel("Residual")
+
+axes[1].hist(residuals, bins=30)
+axes[1].set_title("Residual Distribution")
+axes[1].set_xlabel("Residual")
+
+plt.tight_layout()
+plt.savefig(
+    FIGURE_FOLDER / "ML_Residual_Analysis.png",
+    dpi=300
+)
+plt.show()
+plt.close()
+OUTPUTS:
+   Actual    Predicted    Residual
+0     909   986.543217  -77.543217
+1     909   972.949186  -63.949186
+2     907  1115.793678 -208.793678
+3     909   951.390754  -42.390754
+4     907  1023.799297 -116.799297<Figure size 1300x500 with 2 Axes>
+
+===========================================================================
+CELL 27 | code
+SOURCE:
+#Product-wise prediction error
+# Analyse model prediction errors by product
+
+product_errors = df_ml.loc[
+    X_test.index,
+    ["Product ID", "Product Name"]
+].copy()
+
+product_errors["Actual"] = y_test
+product_errors["Predicted"] = provisional_best_predictions
+product_errors["Absolute_Error"] = np.abs(
+    product_errors["Actual"] - product_errors["Predicted"]
+)
+
+product_error_report = (
+    product_errors.groupby(
+        ["Product ID", "Product Name"],
+        dropna=False
+    )
+    .agg(
+        Record_Count=("Absolute_Error", "size"),
+        Mean_Absolute_Error=("Absolute_Error", "mean"),
+        Mean_Actual=("Actual", "mean")
+    )
+    .reset_index()
+    .sort_values("Mean_Absolute_Error", ascending=False)
+)
+
+display(product_error_report)
+OUTPUTS:
+       Product ID                       Product Name  Record_Count  \
+10  SUG-SWE-91000                          SweeTARTS             2   
+2   CHO-NUT-13000  Wonka Bar - Nutty Crunch Surprise           362   
+4   CHO-TRI-54000  Wonka Bar - Triple Dazzle Caramel           441   
+1   CHO-MIL-31000         Wonka Bar - Milk Chocolate           420   
+0   CHO-FUD-51000          Wonka Bar - Fudge Mallows           366   
+3   CHO-SCR-58000     Wonka Bar -Scrumdiddlyumptious           388   
+7   OTH-KAZ-38000                          Kazookles            26   
+6   OTH-GUM-21000                          Wonka Gum            28   
+9   SUG-LAF-25000                        Laffy Taffy             2   
+8   OTH-LIC-15000                 Lickable Wallpaper            25   
+5   OTH-FIZ-56000               Fizzy Lifting Drinks             2   
+
+    Mean_Absolute_Error  Mean_Actual  
+10           185.594624  1272.500000  
+2            143.153102  1317.558011  
+4            142.804401  1339.507937  
+1            140.653267  1298.666667  
+0            137.782493  1326.109290  
+3            136.336396  1306.136598  
+7            134.882775  1272.576923  
+6            125.737263  1273.035714  
+9            124.959694  1455.000000  
+8            118.018519  1331.640000  
+5            101.170951   908.000000  
+
+===========================================================================
+CELL 28 | code
+SOURCE:
+#Region-wise prediction error
+# Analyse model prediction errors by region
+
+region_errors = df_ml.loc[
+    X_test.index,
+    ["Region"]
+].copy()
+
+region_errors["Actual"] = y_test
+region_errors["Predicted"] = provisional_best_predictions
+region_errors["Absolute_Error"] = np.abs(
+    region_errors["Actual"] - region_errors["Predicted"]
+)
+
+region_error_report = (
+    region_errors.groupby("Region", dropna=False)
+    .agg(
+        Record_Count=("Absolute_Error", "size"),
+        Mean_Absolute_Error=("Absolute_Error", "mean")
+    )
+    .reset_index()
+    .sort_values("Mean_Absolute_Error", ascending=False)
+)
+
+display(region_error_report)
+OUTPUTS:
+     Region  Record_Count  Mean_Absolute_Error
+3   Pacific           687           143.084882
+0  Atlantic           608           139.032128
+2  Interior           447           137.317676
+1      Gulf           320           136.840969
+
+===========================================================================
+CELL 29 | code
+SOURCE:
+#Ship mode-wise prediction error
+# Analyse model prediction errors by shipping mode
+
+shipmode_errors = df_ml.loc[
+    X_test.index,
+    ["Ship Mode"]
+].copy()
+
+shipmode_errors["Actual"] = y_test
+shipmode_errors["Predicted"] = provisional_best_predictions
+shipmode_errors["Absolute_Error"] = np.abs(
+    shipmode_errors["Actual"] - shipmode_errors["Predicted"]
+)
+
+shipmode_error_report = (
+    shipmode_errors.groupby("Ship Mode", dropna=False)
+    .agg(
+        Record_Count=("Absolute_Error", "size"),
+        Mean_Absolute_Error=("Absolute_Error", "mean")
+    )
+    .reset_index()
+    .sort_values("Mean_Absolute_Error", ascending=False)
+)
+
+display(shipmode_error_report)
+OUTPUTS:
+        Ship Mode  Record_Count  Mean_Absolute_Error
+0     First Class           311           145.014719
+1        Same Day           112           142.830663
+3  Standard Class          1243           139.080652
+2    Second Class           396           136.432064
+
+===========================================================================
+CELL 30 | code
+SOURCE:
+#Feature importance
+# Calculate permutation feature importance for the provisional best model
+
+importance_result = permutation_importance(
+    provisional_best_model,
+    X_test,
+    y_test,
+    scoring="neg_root_mean_squared_error",
+    n_repeats=3,
+    random_state=42,
+    n_jobs=-1
+)
+
+feature_importance = pd.DataFrame({
+    "Feature": feature_list,
+    "Importance_Mean": importance_result.importances_mean,
+    "Importance_Std": importance_result.importances_std
+}).sort_values(
+    "Importance_Mean",
+    ascending=False
+)
+
+display(feature_importance)
+
+top_importance = feature_importance.head(15).sort_values(
+    "Importance_Mean"
+)
+
+plt.figure(figsize=(9, 6))
+plt.barh(
+    top_importance["Feature"],
+    top_importance["Importance_Mean"]
+)
+plt.xlabel("Permutation Importance")
+plt.title("Top Feature Importance")
+plt.tight_layout()
+
+plt.savefig(
+    FIGURE_FOLDER / "ML_Feature_Importance.png",
+    dpi=300
+)
+
+plt.show()
+plt.close()
+OUTPUTS:
+              Feature  Importance_Mean  Importance_Std
+12         Order_Year       162.803968        1.078649
+15      Order_Weekday        41.424534        0.666933
+2                City        10.942177        0.350348
+13        Order_Month         6.874005        0.318970
+3      State/Province         4.181389        0.074423
+0           Ship Mode         4.071249        0.579652
+5              Region         1.740041        0.038246
+14      Order_Quarter         0.728895        0.105003
+1      Country/Region         0.378476        0.041565
+4            Division        -0.004568        0.028004
+17     Sales_Per_Unit        -0.632718        0.019637
+18      Cost_Per_Unit        -0.651470        0.047028
+8               Units        -0.666911        0.056925
+16  Profit_Margin_Pct        -0.845816        0.048619
+19    Profit_Per_Unit        -0.906277        0.041219
+7        Product Name        -0.924675        0.102893
+6          Product ID        -0.987512        0.072053
+10       Gross Profit        -1.340701        0.223715
+9               Sales        -1.468339        0.171070
+11               Cost        -1.702232        0.044719<Figure size 900x600 with 1 Axes>
+
+===========================================================================
+CELL 31 | code
+SOURCE:
+#Select best model
+# Select the final model using grouped cross-validation and test performance
+
+final_model_candidates = {
+    **models,
+    "Tuned Random Forest": tuned_random_forest
+}
+
+candidate_results = []
+
+for name, model in final_model_candidates.items():
+
+    prediction = model.predict(X_test)
+
+    candidate_results.append({
+        "Model": name,
+        "Test_MAE": mean_absolute_error(y_test, prediction),
+        "Test_RMSE": np.sqrt(
+            mean_squared_error(y_test, prediction)
+        ),
+        "Test_R2": r2_score(y_test, prediction)
+    })
+
+final_model_comparison = pd.DataFrame(
+    candidate_results
+).sort_values("Test_RMSE").reset_index(drop=True)
+
+display(final_model_comparison)
+
+final_model_name = final_model_comparison.loc[0, "Model"]
+final_model = final_model_candidates[final_model_name]
+
+final_predictions = final_model.predict(X_test)
+
+print("Selected model:", final_model_name)
+print("Selection criterion: Lowest test RMSE among evaluated candidates.")
+OUTPUTS:
+                 Model    Test_MAE   Test_RMSE   Test_R2
+0  Tuned Random Forest  139.670688  163.675428  0.619499
+1        Random Forest  136.586130  163.904306  0.618435
+2    Gradient Boosting  163.302233  171.306667  0.583191
+3    Linear Regression  166.414841  180.784694  0.535793Selected model: Tuned Random Forest
+Selection criterion: Lowest test RMSE among evaluated candidates.
+
+
+===========================================================================
+CELL 33 | code
+SOURCE:
+# Save the complete selected machine learning pipeline
+
+MODEL_PATH = MODEL_FOLDER / "Nassau_Lead_Time_Model.joblib"
+
+joblib.dump(
+    final_model,
+    MODEL_PATH
+)
+
+print("Model saved successfully.")
+print("Model path:", MODEL_PATH)
+OUTPUTS:
+Model saved successfully.
+Model path: C:\Users\hp\Nassau_Candy_Final_Submission\models\Nassau_Lead_Time_Model.joblib
+
+
+===========================================================================
+CELL 37 | code
+SOURCE:
+#Compare random and time-aware split performance
+#This is a diagnostic comparison. The main model split remains grouped by Order ID. The chronological assessment checks whether performance changes when predicting later records.
+# Compare grouped holdout performance with a chronological holdout
+
+date_data = df_ml.loc[
+    df_ml["Order_Date_Parsed"].notna()
+].copy()
+
+date_data = date_data.sort_values("Order_Date_Parsed")
+
+date_cutoff = date_data["Order_Date_Parsed"].quantile(0.80)
+
+time_train_indices = date_data.index[
+    date_data["Order_Date_Parsed"] <= date_cutoff
+]
+
+time_test_indices = date_data.index[
+    date_data["Order_Date_Parsed"] > date_cutoff
+]
+
+X_time_train = X.loc[time_train_indices]
+X_time_test = X.loc[time_test_indices]
+
+y_time_train = y.loc[time_train_indices]
+y_time_test = y.loc[time_test_indices]
+
+time_model = provisional_best_model
+
+time_model.fit(X_time_train, y_time_train)
+
+time_predictions = time_model.predict(X_time_test)
+
+time_mae = mean_absolute_error(
+    y_time_test,
+    time_predictions
+)
+
+time_rmse = np.sqrt(
+    mean_squared_error(y_time_test, time_predictions)
+)
+
+time_r2 = r2_score(
+    y_time_test,
+    time_predictions
+)
+
+random_split_results = {
+    "MAE": mean_absolute_error(y_test, provisional_best_predictions),
+    "RMSE": np.sqrt(
+        mean_squared_error(y_test, provisional_best_predictions)
+    ),
+    "R2": r2_score(y_test, provisional_best_predictions)
+}
+
+split_comparison = pd.DataFrame([
+    {
+        "Validation": "Grouped holdout",
+        **random_split_results
+    },
+    {
+        "Validation": "Chronological holdout",
+        "MAE": time_mae,
+        "RMSE": time_rmse,
+        "R2": time_r2
+    }
+])
+
+display(split_comparison)
+
+print("Chronological cutoff:", date_cutoff)
+print("Chronological training records:", len(X_time_train))
+print("Chronological testing records:", len(X_time_test))
+OUTPUTS:
+              Validation         MAE        RMSE        R2
+0        Grouped holdout  139.670688  163.675428  0.619499
+1  Chronological holdout  179.000267  195.629606 -0.161945Chronological cutoff: 2025-10-09 00:00:00
+Chronological training records: 8165
+Chronological testing records: 2029
+
+
+===========================================================================
+CELL 38 | code
+SOURCE:
+#Evaluate performance by target range
+# Evaluate prediction errors across lead-time ranges in the test dataset
+
+range_error_data = pd.DataFrame({
+    "Actual": y_test.to_numpy(),
+    "Predicted": provisional_best_predictions
+})
+
+range_error_data["Absolute_Error"] = np.abs(
+    range_error_data["Actual"] -
+    range_error_data["Predicted"]
+)
+
+range_error_data["Lead_Time_Range"] = pd.qcut(
+    range_error_data["Actual"],
+    q=5,
+    duplicates="drop"
+)
+
+lead_time_range_report = (
+    range_error_data.groupby(
+        "Lead_Time_Range",
+        observed=True
+    )
+    .agg(
+        Record_Count=("Absolute_Error", "size"),
+        Mean_Actual=("Actual", "mean"),
+        Mean_Predicted=("Predicted", "mean"),
+        MAE=("Absolute_Error", "mean")
+    )
+    .reset_index()
+)
+
+display(lead_time_range_report)
+OUTPUTS:
+    Lead_Time_Range  Record_Count  Mean_Actual  Mean_Predicted         MAE
+0  (903.999, 910.2]           413   907.910412     1047.973028  140.108655
+1   (910.2, 1273.0]           584  1257.657534     1299.947073  146.005663
+2  (1273.0, 1275.0]           335  1274.343284     1311.931265  146.874450
+3  (1275.0, 1639.0]           487  1600.665298     1486.059357  130.921674
+4  (1639.0, 1642.0]           243  1640.666667     1509.362786  131.304450
+
+===========================================================================
+CELL 39 | code
+SOURCE:
+#Calculate MAPE and explain its limitations
+#MAPE is calculated only for non-zero actual values. It can become misleading when actual values are zero or very close to zero.
+# Calculate MAPE safely while excluding zero actual target values
+
+actual_values = y_test.to_numpy()
+predicted_values = final_model.predict(X_test)
+
+nonzero_mask = actual_values != 0
+
+if nonzero_mask.sum() > 0:
+    mape_value = np.mean(
+        np.abs(
+            (actual_values[nonzero_mask] -
+             predicted_values[nonzero_mask]) /
+            actual_values[nonzero_mask]
+        )
+    ) * 100
+else:
+    mape_value = np.nan
+
+mape_report = pd.DataFrame([{
+    "Metric": "MAPE",
+    "Value_Percent": mape_value,
+    "Zero_Actual_Values_Excluded": int((~nonzero_mask).sum()),
+    "Nonzero_Actual_Values_Used": int(nonzero_mask.sum())
+}])
+
+display(mape_report)
+
+print(
+    "Limitation: MAPE is not reliable when actual values are zero "
+    "or very close to zero."
+)
+OUTPUTS:
+  Metric  Value_Percent  Zero_Actual_Values_Excluded  \
+0   MAPE       7.341572                            0   
+
+   Nonzero_Actual_Values_Used  
+0                        2062  Limitation: MAPE is not reliable when actual values are zero or very close to zero.
+
+
+===========================================================================
+CELL 40 | code
+SOURCE:
+#Compare training and testing performance
+# Check the difference between training and testing model performance
+
+train_predictions = final_model.predict(X_train)
+test_predictions = final_model.predict(X_test)
+
+overfitting_report = pd.DataFrame([
+    {
+        "Dataset": "Training",
+        "MAE": mean_absolute_error(y_train, train_predictions),
+        "RMSE": np.sqrt(
+            mean_squared_error(y_train, train_predictions)
+        ),
+        "R2": r2_score(y_train, train_predictions)
+    },
+    {
+        "Dataset": "Testing",
+        "MAE": mean_absolute_error(y_test, test_predictions),
+        "RMSE": np.sqrt(
+            mean_squared_error(y_test, test_predictions)
+        ),
+        "R2": r2_score(y_test, test_predictions)
+    }
+])
+
+display(overfitting_report)
+
+mae_gap = (
+    overfitting_report.loc[1, "MAE"] -
+    overfitting_report.loc[0, "MAE"]
+)
+
+rmse_gap = (
+    overfitting_report.loc[1, "RMSE"] -
+    overfitting_report.loc[0, "RMSE"]
+)
+
+print("Training-to-testing MAE difference:", mae_gap)
+print("Training-to-testing RMSE difference:", rmse_gap)
+OUTPUTS:
+    Dataset        MAE        RMSE        R2
+0  Training  93.142396  118.443653  0.795124
+1   Testing  95.979497  120.738236  0.792949Training-to-testing MAE difference: 2.837100946203904
+Training-to-testing RMSE difference: 2.294582343678485
+
+
+===========================================================================
+CELL 41 | code
+SOURCE:
+# Analyse whether the selected model systematically overpredicts or underpredicts
+# Analyse prediction bias
+# A positive residual means the model predicted too low. A negative residual means it predicted too high.
+bias_data = pd.DataFrame({
+    "Actual": y_test.to_numpy(),
+    "Predicted": test_predictions
+})
+
+bias_data["Residual"] = (
+    bias_data["Actual"] - bias_data["Predicted"]
+)
+
+bias_data["Prediction_Bias"] = np.where(
+    bias_data["Residual"] > 0,
+    "Underprediction",
+    np.where(
+        bias_data["Residual"] < 0,
+        "Overprediction",
+        "Exact Prediction"
+    )
+)
+
+bias_summary = (
+    bias_data.groupby("Prediction_Bias")
+    .agg(
+        Record_Count=("Residual", "size"),
+        Mean_Residual=("Residual", "mean"),
+        Mean_Absolute_Error=(
+            "Residual",
+            lambda values: np.abs(values).mean()
+        )
+    )
+    .reset_index()
+)
+
+display(bias_summary)
+
+print("Mean residual:", bias_data["Residual"].mean())
+print("Median residual:", bias_data["Residual"].median())
+OUTPUTS:
+   Prediction_Bias  Record_Count  Mean_Residual  Mean_Absolute_Error
+0   Overprediction           957     -93.128744            93.128744
+1  Underprediction          1105      98.448429            98.448429Mean residual: 9.535066314331312
+Median residual: 4.0452156475064385
+
+
+===========================================================================
+CELL 42 | code
+SOURCE:
+# Create a visual dashboard of final model evaluation metrics
+
+dashboard_metrics = pd.DataFrame([
+    {
+        "Metric": "MAE",
+        "Value": mean_absolute_error(y_test, test_predictions)
+    },
+    {
+        "Metric": "RMSE",
+        "Value": np.sqrt(
+            mean_squared_error(y_test, test_predictions)
+        )
+    },
+    {
+        "Metric": "R2",
+        "Value": r2_score(y_test, test_predictions)
+    },
+    {
+        "Metric": "MAPE",
+        "Value": mape_value
+    }
+])
+
+display(dashboard_metrics)
+
+fig, axes = plt.subplots(1, 2, figsize=(13, 5))
+
+axes[0].bar(
+    dashboard_metrics["Metric"],
+    dashboard_metrics["Value"]
+)
+axes[0].set_title("Final Model Metrics")
+axes[0].set_ylabel("Metric Value")
+
+axes[1].scatter(
+    y_test,
+    test_predictions,
+    alpha=0.5
+)
+
+minimum_value = min(
+    y_test.min(),
+    test_predictions.min()
+)
+
+maximum_value = max(
+    y_test.max(),
+    test_predictions.max()
+)
+
+axes[1].plot(
+    [minimum_value, maximum_value],
+    [minimum_value, maximum_value],
+    linestyle="--"
+)
+
+axes[1].set_xlabel("Actual Lead Time")
+axes[1].set_ylabel("Predicted Lead Time")
+axes[1].set_title("Actual vs Predicted")
+
+plt.tight_layout()
+
+plt.savefig(
+    FIGURE_FOLDER / "ML_Final_Evaluation_Dashboard.png",
+    dpi=300
+)
+
+plt.show()
+plt.close()
+
+print("Evaluation dashboard saved.")
+OUTPUTS:
+  Metric       Value
+0    MAE   95.979497
+1   RMSE  120.738236
+2     R2    0.792949
+3   MAPE    7.341572<Figure size 1300x500 with 2 Axes>Evaluation dashboard saved.
+
+
+===========================================================================
+CELL 43 | code
+SOURCE:
+#Export complete ML results and documentation
+# Export machine learning results, reports, metrics, and model documentation
+
+ML_REPORT_PATH = REPORT_FOLDER / "Nassau_Candy_ML_Analysis.xlsx"
+
+prediction_export = pd.DataFrame({
+    "Row_ID": df_ml.loc[X_test.index, "Row ID"].values,
+    "Order_ID": df_ml.loc[X_test.index, "Order ID"].values,
+    "Actual_Lead_Time": y_test.values,
+    "Predicted_Lead_Time": test_predictions
+})
+
+prediction_export["Absolute_Error"] = np.abs(
+    prediction_export["Actual_Lead_Time"] -
+    prediction_export["Predicted_Lead_Time"]
+)
+
+export_tables = {
+    "Model_Comparison": model_comparison,
+    "Cross_Validation": cv_table,
+    "Final_Model_Comparison": final_model_comparison,
+    "Product_Errors": product_error_report,
+    "Region_Errors": region_error_report,
+    "ShipMode_Errors": shipmode_error_report,
+    "Feature_Importance": feature_importance,
+    "Target_Summary": target_summary,
+    "Feature_Quality": feature_quality_report,
+    "Split_Comparison": split_comparison,
+    "LeadTime_Ranges": lead_time_range_report,
+    "Overfitting": overfitting_report,
+    "Prediction_Bias": bias_summary,
+    "Dashboard_Metrics": dashboard_metrics,
+    "Predictions": prediction_export
+}
+
+with pd.ExcelWriter(
+    ML_REPORT_PATH,
+    engine="openpyxl"
+) as writer:
+
+    for sheet_name, table in export_tables.items():
+        table.to_excel(
+            writer,
+            sheet_name=sheet_name[:31],
+            index=False
+        )
+
+# Export important reports separately
+for report_name, table in export_tables.items():
+    table.to_csv(
+        PROCESSED_FOLDER / f"ML_{report_name}.csv",
+        index=False
+    )
+
+# Save final model information
+model_metadata = {
+    "project": "Nassau Candy Distributor",
+    "target_variable": TARGET,
+    "selected_model": final_model_name,
+    "predictor_features": feature_list,
+    "training_records": int(len(X_train)),
+    "testing_records": int(len(X_test)),
+    "test_MAE": float(mean_absolute_error(y_test, test_predictions)),
+    "test_RMSE": float(
+        np.sqrt(mean_squared_error(y_test, test_predictions))
+    ),
+    "test_R2": float(r2_score(y_test, test_predictions)),
+    "model_file": MODEL_PATH.name
+}
+
+METADATA_PATH = MODEL_FOLDER / "Nassau_Lead_Time_Model_Metadata.json"
+
+with open(METADATA_PATH, "w", encoding="utf-8") as file:
+    json.dump(model_metadata, file, indent=4)
+
+print("Excel report saved:", ML_REPORT_PATH)
+print("Model metadata saved:", METADATA_PATH)
+print("CSV reports exported:", len(export_tables))
+OUTPUTS:
+Excel report saved: C:\Users\hp\Nassau_Candy_Final_Submission\reports\Nassau_Candy_ML_Analysis.xlsx
+Model metadata saved: C:\Users\hp\Nassau_Candy_Final_Submission\models\Nassau_Lead_Time_Model_Metadata.json
+CSV reports exported: 15
+
+
+===========================================================================
+CELL 44 | code
+SOURCE:
+# Select the final model using grouped cross-validation results
+
+selection_results = cv_table[
+    ["Model", "Mean_CV_RMSE"]
+].copy()
+
+tuned_result = pd.DataFrame([{
+    "Model": "Tuned Random Forest",
+    "Mean_CV_RMSE": -tuning_search.best_score_
+}])
+
+selection_results = pd.concat(
+    [selection_results, tuned_result],
+    ignore_index=True
+)
+
+selection_results = selection_results.sort_values(
+    "Mean_CV_RMSE"
+).reset_index(drop=True)
+
+display(selection_results)
+
+final_model_name = selection_results.loc[0, "Model"]
+
+final_model_candidates = {
+    **models,
+    "Tuned Random Forest": tuned_random_forest
+}
+
+final_model = final_model_candidates[final_model_name]
+
+# Refit the selected model using the grouped training dataset
+final_model.fit(X_train, y_train)
+
+final_predictions = final_model.predict(X_test)
+
+print("Final selected model:", final_model_name)
+print("Selection basis: Lowest grouped cross-validation RMSE.")
+print("Final model refitted successfully.")
+OUTPUTS:
+                 Model  Mean_CV_RMSE
+0  Tuned Random Forest    163.120414
+1        Random Forest    163.178470
+2    Gradient Boosting    170.029563
+3    Linear Regression    179.851424Final selected model: Tuned Random Forest
+Selection basis: Lowest grouped cross-validation RMSE.
+Final model refitted successfully.

@@ -1,0 +1,3 @@
+KPI,Value,Unit,Method,Interpretation
+Derived Lead-Time Standard Deviation,262.44489175775294,Days,Sample standard deviation (ddof=1),Descriptive variability of historical derived date differences.
+Derived Lead-Time Interquartile Range,367.0,Days,75th percentile minus 25th percentile,Spread of the middle 50% of historical derived date differences.

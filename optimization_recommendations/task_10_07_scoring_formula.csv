@@ -1,0 +1,6 @@
+Component,Formula_or_Rule,Interpretation_and_Limitation
+Speed priority,Higher historical mean derived lead-time receives higher review priority.,Product-level screening only; not a predicted factory improvement.
+Profit priority,Higher historical gross margin receives higher profit-protection priority.,Historical margin is not alternative-factory profitability.
+Balanced score,Weighted average of speed priority and profit priority.,Weights are explicit and adjustable; score is not an optimization proof.
+Factory option treatment,The product-level score is copied across its factory options.,No factory-specific score differences are inferred.
+Hypothetical cost treatment,Optional user-entered incremental cost per unit can support arithmetic sensitivity.,Blank values mean no cost assumption; not actual factory cost.

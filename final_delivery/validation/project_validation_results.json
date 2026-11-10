@@ -1,0 +1,72 @@
+[
+    {
+        "check": "Project root",
+        "status": "PASS",
+        "detail": "C:\\Users\\hp\\Nassau_Candy_Final_Submission"
+    },
+    {
+        "check": "Application entry point",
+        "status": "PASS",
+        "detail": "C:\\Users\\hp\\Nassau_Candy_Final_Submission\\data\\processed\\app_bundle\\app.py"
+    },
+    {
+        "check": "Raw dataset",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "check": "Executive summary",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "check": "README",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "check": "Requirements",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "check": "PowerPoint",
+        "status": "PASS",
+        "detail": "CREATED"
+    },
+    {
+        "check": "User manual",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "check": "Fresh test script",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "check": "Application syntax",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "check": "Application module: prediction_utils.py",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "check": "Application module: feature_utils.py",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "check": "Application module: scenario_utils.py",
+        "status": "PASS",
+        "detail": ""
+    },
+    {
+        "check": "Application module: recommendation_utils.py",
+        "status": "PASS",
+        "detail": ""
+    }
+]
