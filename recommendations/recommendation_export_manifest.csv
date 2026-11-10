@@ -1,0 +1,12 @@
+File,Rows,Columns,Status
+Phase_10_Product_Review_Priorities.csv,15,11,PASSED
+Phase_10_Factory_Option_Screening.csv,75,15,PASSED
+task_10_04_lead_time_comparison.csv,75,17,PASSED
+task_10_13_top_3_products.csv,3,13,PASSED
+task_10_14_top_5_products.csv,5,13,PASSED
+task_10_15_top_10_products.csv,10,13,PASSED
+task_10_16_recommendation_explanations.csv,15,14,PASSED
+task_10_17_coverage_kpis.csv,7,4,PASSED
+task_10_18_unsupported_scenarios.csv,60,13,PASSED
+task_10_22_business_action_plan.csv,7,6,PASSED
+ranked_product_recommendations.csv,45,35,PASSED

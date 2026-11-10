@@ -1,0 +1,10 @@
+Browser Test,Status,Evidence
+Application opens in browser,NOT TESTED,Requires live browser interaction.
+All dashboard pages load,NOT TESTED,Requires live browser interaction.
+Slider changes update scenario outputs,NOT TESTED,Requires live browser interaction.
+Product filter updates displayed data,NOT TESTED,Requires live browser interaction.
+Region filter updates displayed data,NOT TESTED,Requires live browser interaction.
+Ship mode filter updates displayed data,NOT TESTED,Requires live browser interaction.
+Scenario outputs respond correctly,NOT TESTED,Requires live browser interaction.
+CSV download works from dashboard,NOT TESTED,Requires live browser interaction.
+Excel download works from dashboard,NOT TESTED,Requires live browser interaction.

@@ -1,0 +1,2 @@
+KPI,Value,Unit,Scope,Record_Count,Status,Interpretation
+Total Sales,141783.63,Source currency units,All source order lines,10194,Calculated from original source,Sum of historical Sales values; not a forecast.

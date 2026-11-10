@@ -1,0 +1,9 @@
+Area,Claim or Limitation
+Lead Time,Lead time is calculated as Ship Date minus Order Date. It is not independently verified carrier transit time.
+Factory Mapping,"Product-to-factory mapping is a reference mapping, not verified historical dispatch."
+Model Predictors,The model uses 20 predictor features. Factory is not included as a model predictor.
+Geographic Distance,"Haversine distances represent straight-line distance, not road or freight-route distance."
+Cost Savings,Alternative factory freight or manufacturing cost savings have not been independently established.
+Scenario Analysis,Scenario support is not a probability of success.
+Recommendations,Recommendations are indicative and are not proven to be globally optimal.
+Model Metrics,Existing model metric discrepancies must remain documented and must not be silently reconciled.

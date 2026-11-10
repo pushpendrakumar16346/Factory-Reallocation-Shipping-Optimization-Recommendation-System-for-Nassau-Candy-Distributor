@@ -1,0 +1,27 @@
+{
+    "target_variable": "Lead_Time_Days",
+    "predictor_features": [
+        "Ship Mode",
+        "Country/Region",
+        "City",
+        "State/Province",
+        "Division",
+        "Region",
+        "Product ID",
+        "Product Name",
+        "Units",
+        "Sales",
+        "Gross Profit",
+        "Cost",
+        "Order_Year",
+        "Order_Month",
+        "Order_Quarter",
+        "Order_Weekday",
+        "Profit_Margin_Pct",
+        "Sales_Per_Unit",
+        "Cost_Per_Unit",
+        "Profit_Per_Unit"
+    ],
+    "feature_count": 20,
+    "selected_model": "Tuned Random Forest"
+}

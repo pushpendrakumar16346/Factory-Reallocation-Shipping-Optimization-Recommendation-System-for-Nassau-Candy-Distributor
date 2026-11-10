@@ -1,0 +1,5 @@
+Region,Order_Lines,Unique_Orders,Sample_Support_Category,Low_Sample_Size_Risk_Flag
+Atlantic,2986,2476,Higher sample support,False
+Gulf,1620,1350,Higher sample support,False
+Interior,2335,1979,Higher sample support,False
+Pacific,3253,2744,Higher sample support,False

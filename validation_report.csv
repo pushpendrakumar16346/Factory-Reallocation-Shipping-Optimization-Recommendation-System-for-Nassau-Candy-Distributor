@@ -1,0 +1,25 @@
+Check,Passed
+File exists: processed_dataset.csv,True
+File exists: factory_master.csv,True
+File exists: product_factory_mapping.csv,True
+File exists: Nassau_Lead_Time_Model.joblib,True
+File exists: model_metadata.json,True
+File exists: feature_schema.json,True
+File exists: metrics_export_manifest.csv,True
+File exists: recommendation_export_manifest.csv,True
+File exists: kpi_dashboard_data.csv,True
+File exists: risk_register.csv,True
+File exists: prediction_utils.py,True
+File exists: feature_utils.py,True
+File exists: scenario_utils.py,True
+File exists: recommendation_utils.py,True
+"Original raw shape is 10,194 x 18",True
+"Processed export contains 10,194 rows",True
+Factory Master contains 5 records,True
+Product mapping contains 15 records,True
+KPI dashboard data reloads,True
+Risk register reloads,True
+All mapped factories exist in Factory Master,True
+Original CSV SHA256 unchanged,True
+Model loads in fresh Python process,True
+All four app modules import in fresh process,True

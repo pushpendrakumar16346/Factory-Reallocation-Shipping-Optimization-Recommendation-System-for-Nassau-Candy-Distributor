@@ -1,0 +1,69 @@
+Check,Status,Detail
+Application file exists,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\app.py
+Python syntax,PASS,Compilation successful
+File exists: Processed dataset,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\data\processed_dataset.csv
+File exists: Factory master,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\data\factory_master.csv
+File exists: Product mapping,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\data\product_factory_mapping.csv
+File exists: KPI dashboard,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\data\kpis\kpi_dashboard_data.csv
+File exists: Risk register,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\data\kpis\risk_register.csv
+File exists: High derived lead-time risk,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\data\kpis\high_derived_lead_time_risk.csv
+File exists: Low margin risk,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\data\kpis\low_margin_risk.csv
+File exists: Low sample-size risk,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\data\kpis\low_sample_size_risk.csv
+File exists: Regional risk,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\data\kpis\region_performance_risk.csv
+File exists: Recommendations,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\reports\recommendations\ranked_product_recommendations.csv
+File exists: Model comparison,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\reports\model_metrics\ML_Final_Model_Comparison.csv
+File exists: Model predictions,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\reports\model_metrics\ML_Predictions.csv
+File exists: Saved model,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\models\Nassau_Lead_Time_Model.joblib
+File exists: Model metadata,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\models\model_metadata.json
+File exists: Feature schema,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\models\feature_schema.json
+Report available: Factory option screening,PASS,['Phase_10_Factory_Option_Screening.csv']
+Report available: Unsupported scenarios,PASS,['task_10_18_unsupported_scenarios.csv']
+Report available: Business action plan,PASS,['task_10_22_business_action_plan.csv']
+Dataset shape: Processed dataset,PASS,"Expected (10194, 34); actual (10194, 34)"
+Dataset shape: Factory master,PASS,"Expected (5, 3); actual (5, 3)"
+Dataset shape: Product mapping,PASS,"Expected (15, 3); actual (15, 3)"
+Dataset shape: KPI dashboard,PASS,"Expected (9, 6); actual (9, 6)"
+Dataset shape: Risk register,PASS,"Expected (16, 11); actual (16, 11)"
+Dataset shape: Recommendations,PASS,"Expected (45, 35); actual (45, 35)"
+Dataset shape: Factory options,PASS,"Expected (75, 15); actual (75, 15)"
+Dataset shape: Regional risk,PASS,"Expected (4, 17); actual (4, 17)"
+Dataset shape: Model comparison,PASS,"Expected (4, 4); actual (4, 4)"
+Required columns: Processed dataset,PASS,Missing columns: []
+Required columns: KPI dashboard,PASS,Missing columns: []
+Required columns: Recommendations,PASS,Missing columns: []
+Required columns: Risk register,PASS,Missing columns: []
+Product factory mapping consistency,PASS,Unknown factories: []
+No numbered references in application source,PASS,Application source checked
+Feature included: Home dashboard,PASS,Dashboard Overview
+Feature included: KPI cards,PASS,Key Performance Indicators
+Feature included: Product performance,PASS,Product Performance Analysis
+Feature included: Region analysis,PASS,Regional Performance Analysis
+Feature included: Ship mode analysis,PASS,Shipping Mode Analysis
+Feature included: Factory explorer,PASS,Factory Explorer
+Feature included: Product selector,PASS,Product Selector
+Feature included: Region selector,PASS,Region Selector
+Feature included: Ship mode selector,PASS,Ship Mode Selector
+Feature included: Factory selector,PASS,Factory Selector
+Feature included: Speed-profit slider,PASS,Speed-Profit Priority
+Feature included: Scenario simulator,PASS,Scenario Simulator
+Feature included: Recommendation dashboard,PASS,Product Recommendation Dashboard
+Feature included: Risk and impact,PASS,Risk and Impact Dashboard
+Feature included: Scenario comparison,PASS,Scenario Comparison
+Feature included: CSV downloads,PASS,download_csv
+Feature included: Excel downloads,PASS,download_excel
+Feature included: Empty filter handling,PASS,No records match the selected filters
+Feature included: Missing model handling,PASS,The saved model is unavailable
+Runtime page: Home,PASS,
+Runtime page: Product Performance,PASS,
+Runtime page: Region Analysis,PASS,
+Runtime page: Ship Mode Analysis,PASS,
+Runtime page: Factory Explorer,PASS,
+Runtime page: Scenario Simulator,PASS,
+Runtime page: Recommendations,PASS,
+Runtime page: Risk and Impact,PASS,
+Python package: streamlit,PASS,Available
+Python package: pandas,PASS,Available
+Python package: numpy,PASS,Available
+Python package: sklearn,PASS,Available
+Python package: openpyxl,PASS,Available
+Python package: joblib,PASS,Available

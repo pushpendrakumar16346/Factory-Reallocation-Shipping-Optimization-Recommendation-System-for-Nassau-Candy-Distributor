@@ -1,0 +1,2 @@
+KPI,Value,Unit,Scope,Record_Count,Status,Interpretation
+Total Gross Profit,93442.8,Source currency units,All source order lines,10194,Calculated from source Gross Profit column,Uses the recorded Gross Profit field; it is not silently replaced with a Sales-minus-Cost calculation.

@@ -1,0 +1,16 @@
+{
+    "review_status": "REVIEW_REQUIRED",
+    "note": "Saved model metadata test metrics differ from the Tuned Random Forest row in ML_Final_Model_Comparison.csv. Values are preserved separately; no reconciliation or replacement has been performed.",
+    "metadata_metrics": {
+        "MAE": 95.97949651478011,
+        "RMSE": 120.7382358245334,
+        "R2": 0.7929486715895369
+    },
+    "comparison_file": "ML_Final_Model_Comparison.csv",
+    "comparison_values_for_tuned_random_forest": {
+        "MAE": 139.670688,
+        "RMSE": 163.675428,
+        "R2": 0.619499
+    },
+    "cross_validation_note": "ML_Cross_Validation.csv contains Random Forest, Gradient Boosting and Linear Regression; it does not list Tuned Random Forest."
+}

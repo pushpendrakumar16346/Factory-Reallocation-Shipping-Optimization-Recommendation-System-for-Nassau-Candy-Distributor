@@ -1,0 +1,25 @@
+Validation Area,Check,Status,Evidence
+Feature Formula QA,Lead time formula: Lead_Time_Days,PASS,Compared records: 10194; negative calculated values: 0
+Feature Formula QA,Lead time formula: Lead_Time_Category,FAIL,Compared records: 0; negative calculated values: 0
+Feature Formula QA,Feature utility source inspection,PASS,Inspected feature_utils.py; functions found: 4
+Feature Formula QA,All engineered feature formulas,REVIEW REQUIRED,Only independently reproducible formulas can be confirmed. Review remaining feature definitions individually.
+Model QA,Reload model: Nassau_Lead_Time_Model.joblib,PASS,Loaded object type: Pipeline
+Reproducibility,Repeated prediction: Nassau_Lead_Time_Model.joblib,PASS,Sample size: 20
+Reproducibility,Prediction after reload: Nassau_Lead_Time_Model.joblib,PASS,Compared original and freshly reloaded model outputs.
+Score QA,Recommendation source inspection,PASS,Functions identified: 2
+Score QA,Recommendation formula verification,REVIEW REQUIRED,"Source inspected, but expected score values and independent reference calculations are not established."
+UI QA,Streamlit application syntax,PASS,Application source parsed successfully.
+UI QA,Slider control presence,PASS,Static source inspection only; live slider interaction has not been tested.
+UI QA,Product filter source presence,PASS,Static source check; actual filter behavior requires live application testing.
+UI QA,Region filter source presence,PASS,Static source check; actual filter behavior requires live application testing.
+UI QA,Ship mode filter source presence,PASS,Static source check; actual filter behavior requires live application testing.
+Scenario QA,Scenario utility source inspection,PASS,Functions identified: 2
+Scenario QA,Scenario output verification,REVIEW REQUIRED,Expected scenario outputs and independent benchmark values must be confirmed before numerical validation.
+Export QA,CSV export and read-back,PASS,"Exported shape: (10194, 34)"
+Export QA,Excel export and read-back,PASS,"Exported shape: (10194, 34); file size: 1637819 bytes"
+End-to-End QA,Application file availability,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\app.py
+End-to-End QA,Application data directory,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\data
+End-to-End QA,Application model directory,PASS,C:\Users\hp\Nassau_Candy_Final_Submission\data\processed\app_bundle\models
+End-to-End QA,Application configuration,PASS,Configuration JSON parsed successfully.
+End-to-End QA,Live browser end-to-end testing,NOT TESTED,Static validation completed; interactive browser evidence must be recorded separately.
+Evidence Audit,Project claims and limitations documented,PASS,Documented limitations: 8
