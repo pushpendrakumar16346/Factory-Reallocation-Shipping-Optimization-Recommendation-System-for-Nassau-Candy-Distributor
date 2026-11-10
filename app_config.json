@@ -2,7 +2,7 @@
     "title": "Nassau Candy Analytics",
     "page_icon": "\ud83c\udf6c",
     "layout": "wide",
-    "data_path": "C:\\Users\\hp\\Nassau_Candy_Final_Submission\\data\\processed\\app_bundle\\data\\processed_dataset.csv",
+    "data_path": "processed_dataset.csv",
     "model_available": true,
     "products": [
         "Everlasting Gobstopper",
